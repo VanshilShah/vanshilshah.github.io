@@ -88,6 +88,7 @@ h6 {
 }
 
 p {
+  font-size: 20px;
 }
 
 footer p {
@@ -198,11 +199,13 @@ Full-Width Styles
 }
 
 #nav_banner{
-  display: block;
+  display: inline-block;
   position: fixed;
   top: 40px;
   padding: 0 0 0 250px;
-  color: #fff;
+  color: #fff
+  max-width: 1750px;
+  min-width: 1000px;
   background: #FDC113;
   box-shadow: 0 0 7px #F68421;
 }
@@ -215,38 +218,38 @@ Full-Width Styles
 }
 #navButton:hover, #navButton:focus {background:#FCE094;}
 #navButton2{
-
   padding: 30px 5px 10px 5px;
   font-size: 22px;
   text-decoration: none;
   color: #fff;
   background:#FDC113; 
 }
-#sub_page{
-  display: block;
-  margin-top: 0px
-  position: absoulte;  
+#sub_page{  
+  max-width: 1750px;
+  min-width: 1000px;
+  margin: 0 auto;
   padding: 0 175px 0 175px;
   background: #eff;
 }
 #about{
-  color: #000;
+  color: #000;  
   background: #E1E1E1;
   padding: 0 0 5px 20px;
   box-shadow: 0 0 10px #fff;
 }
 #para_A{
   color: #000;
+  float:center;
   background: #EAEAEA;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 150%;  
   text-align: center;
   padding: 80px 200px 80px 250px;
   box-shadow: 0 0 10px #fff;
 }
 #avatar_img{ 
   float: left;
-  max-width: 200px;
+  max-width: 150px;
   padding: 70px 10px 0 30px;
 }
 #projects{
@@ -257,6 +260,53 @@ Full-Width Styles
   color: #000;
   background: #E1E1E1;
   box-shadow: 0 0 5px #EAEAEA;
+}
+#button_Container{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.project_Button{
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+	padding: 30px 30px 30px 30px;
+	font-size: 26px;
+	text-decoration: none;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	min-width: 150px;
+}
+#red{
+	color: #fff;
+	background: #f00;
+	text-decoration: none;
+}
+#red:hover, #red:focus {background:#f88;}
+
+#blue{
+	color: #fff;
+	background: #0cf;
+	text-decoration: none;
+}
+#blue:hover, #blue:focus {background:#3ef;}
+#green{
+	color: #fff;
+	background: #0fa;
+	text-decoration: none;
+}
+#green:hover, #green:focus {background:#bef;}
+#orange{
+	color: #fff;
+	background: #fc1;
+	text-decoration: none;
+}
+#orange:hover, #orange:focus {background:#bef;}
+#description{
+	padding-top: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 100;
 }
 #para_P{
   color: #000;
