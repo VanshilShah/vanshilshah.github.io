@@ -209,7 +209,7 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
 }
 
 #navButton{  
-  padding: 15px 5px 15px 5px;
+  padding: 15px 5px 13px 5px;
   font-size: 22px;
   text-decoration: none;
   color: #fff;
@@ -218,7 +218,7 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
 #navButton:hover, #navButton:focus {background:#FCE094;}
 
 #navButton2{  
-  padding: 15px 5px 15px 5px;
+  padding: 15px 5px 13px 5px;
   font-size: 22px;
   text-decoration: none;
   color: #fff;
@@ -232,6 +232,12 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
   padding: 0 175px 0 175px;
   background: #eff;
 }
+.sub_page_header{
+  color: #000;  
+  background: #E1E1E1;
+  padding: 0 0 5px 20px;
+  box-shadow: 0 0 10px #fff;
+}
 #about{
   color: #000;  
   background: #E1E1E1;
@@ -241,11 +247,11 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
 #para_A{
   color: #000;
   float:center;
-  background: #EAEAEA;
   font-weight: 100;
   font-size: 150%;  
   text-align: center;
   padding: 80px 200px 80px 250px;
+  background: #EAEAEA;
   box-shadow: 0 0 10px #fff;
 }
 #avatar_img{ 
@@ -254,19 +260,14 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
   padding: 70px 10px 0 30px;
 }
 #projects{
-  display: block;
-  margin-top: 10px;
-  position: absoulte;
-  padding: 0 0 0 10px;
-  color: #000;
-  background: #E1E1E1;
-  box-shadow: 0 0 5px #EAEAEA;
+padding-bottom: 50px;
 }
 #button_Container{
   max-width: 950px;
   min-width: 950px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding: 150px 0 0 0;
+  background: #EAEAEA;
+  box-shadow: 0 0 10px #fff;
 }
 .project_Button{
 	display: block;
@@ -278,28 +279,25 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
 	width: 150px;
 	height: 150px;
 	min-width: 150px;
+	color: #333;
 }
 #red{
-	color: #fff;
 	background: #f00;
 	text-decoration: none;
 }
 #red:hover, #red:focus {background:#f88;}
 
 #blue{
-	color: #fff;
 	background: #0cf;
 	text-decoration: none;
 }
 #blue:hover, #blue:focus {background:#3ef;}
 #green{
-	color: #fff;
 	background: #0d3	;
 	text-decoration: none;
 }
 #green:hover, #green:focus {background:#bef;}
 #orange{
-	color: #fff;
 	background: #fc1;
 	text-decoration: none;
 }
@@ -309,7 +307,7 @@ box-shadow: 0 0 7px rgb(246, 132, 33);
 	min-width: 150px;
 	padding-top: 10px;
 	text-align: center;
-	color: #fff;
+	color: #555;
 	font-size: 16px;
 	font-weight: 100;
 }
