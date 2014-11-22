@@ -197,36 +197,37 @@ Full-Width Styles
   padding: 20px 10px;
   margin: 0 auto;
 }
-
-#nav_banner{
-  display: inline-block;
-  position: fixed;
-  top: 40px;
-  padding: 0 0 0 250px;
-  color: #fff
-  max-width: 1750px;
-  min-width: 1000px;
-  background: #FDC113;
-  box-shadow: 0 0 7px #F68421;
+.nav{
+display: block;
+position: fixed;
+top: 40px;
+height: 55px;
+color: #fff;
+padding: 0 0 0 275px;
+background: rgb(253, 193, 19);
+box-shadow: 0 0 7px rgb(246, 132, 33);
 }
-#navButton{
-  padding: 30px 5px 10px 5px;
+
+#navButton{  
+  padding: 15px 5px 15px 5px;
   font-size: 22px;
   text-decoration: none;
   color: #fff;
   background:#FDC113; 
 }
 #navButton:hover, #navButton:focus {background:#FCE094;}
-#navButton2{
-  padding: 30px 5px 10px 5px;
+
+#navButton2{  
+  padding: 15px 5px 15px 5px;
   font-size: 22px;
   text-decoration: none;
   color: #fff;
   background:#FDC113; 
 }
+
 #sub_page{  
-  max-width: 1750px;
-  min-width: 1000px;
+  max-width: 950px;
+  min-width: 950px;
   margin: 0 auto;
   padding: 0 175px 0 175px;
   background: #eff;
@@ -262,12 +263,14 @@ Full-Width Styles
   box-shadow: 0 0 5px #EAEAEA;
 }
 #button_Container{
+  max-width: 950px;
+  min-width: 950px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
 .project_Button{
-	display: inline-block;
-	margin: 10px 10px 10px 10px;
+	display: block;
+	margin: 10px 10px 25px 10px;
 	padding: 30px 30px 30px 30px;
 	font-size: 26px;
 	text-decoration: none;
@@ -291,7 +294,7 @@ Full-Width Styles
 #blue:hover, #blue:focus {background:#3ef;}
 #green{
 	color: #fff;
-	background: #0fa;
+	background: #0d3	;
 	text-decoration: none;
 }
 #green:hover, #green:focus {background:#bef;}
@@ -300,8 +303,10 @@ Full-Width Styles
 	background: #fc1;
 	text-decoration: none;
 }
-#orange:hover, #orange:focus {background:#bef;}
+#orange:hover, #orange:focus {background:#fe4;}
 #description{
+	max-width: 150px;
+	min-width: 150px;
 	padding-top: 10px;
 	text-align: center;
 	color: #fff;
