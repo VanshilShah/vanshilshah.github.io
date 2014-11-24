@@ -370,14 +370,26 @@ padding: 0 0 0 200px;
   padding: 0 0 0 80px;
 }
 #contact{
-  display: block;
   margin-top: 10px;
-  position: absoulte;
-  padding: 0 0 0 10px;
-  color: #000;
-  background: #E1E1E1;
-  box-shadow: 0 0 5px #EAEAEA;
+  color: #fff;  
+  background: #444;
 }
+#contact_table{
+	max-width: 950px;
+	min-width: 950px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#contact_img
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 30px;
+  max-width: 200px;
+  padding: 10px 20px 10px 20px;
+  background: #444;
+}
+#contact_img:hover, #contact_img:focus {background:#555;}
 
 
 
