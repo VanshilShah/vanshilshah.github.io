@@ -57,21 +57,19 @@ h1, h2, h3, h4, h5, h6 {
   font:  'Calibri;
   letter-spacing: -1px;
 }
-
 h1 {
-  color:#F37422;
-  background: EAEAEA;
   font-size: 36px;
   font-weight: 100;
 }
 
 h2 {
-  padding-bottom: 10px;
   font-size: 32px;
+  font-weight: 100;
 }
 
 h3 {
   font-size: 34px;
+  font-weight: 100;
 }
 
 h4 {
@@ -89,13 +87,6 @@ h6 {
   font-weight: 100;
 }
 
-p {
-  font-size: 20px;
-}
-
-footer p {
-  color: #FFEBA6;
-}
 a{
 	text-decoration: none;
 	color: #666;
@@ -106,134 +97,36 @@ footer a {
   text-decoration: underline;
 }
 
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-img {
-
-}
-
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0 10px 0 10px;
-  max-width: 200px;
-  border: none;
-}
-
-pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
-
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
-
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
-
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow: auto;
-}
-
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-pre code {
-  display: block;
-  box-shadow: none;
-}
-
-blockquote {
-  color: #666;
-  margin-bottom: 20px;
-  padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
-}
-
-hr {
-  height: 1px;
-  margin-bottom: 5px;
-  border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
-}
-
-table {
- }
-
-th {
-  font-family: 'Calibri';
-  background: #FDC113;
-  font-size: 20px;
-  color: #fff;
- }
-form {
-  background: #FFEBA6;
-  padding: 20px;
-}
-
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
-
-.outer {
-  width: 100%;
-}
-
-.inner {
-  position: relative;
-  max-width: 640px;
-  padding: 20px 10px;
-  margin: 0 auto;
-}
 .nav{
 display: block;
 position: fixed;
-top: 40px;
-height: 55px;
+top: 0px;
+height: 35px;
 color: #fff;
-padding: 0 0 0 200px;
+padding: 0 0 0 175px;
 }
 
 .navButton{  
-  padding: 15px 5px 13px 5px;
-  font-size: 22px;
+  padding: 5px 5px 5px 5px;
+  font-size: 20px;
   text-decoration: none;
   color: #fff;
   background:#FDC113; 
 }
 .navButton:hover, .navButton:focus {background:#FCE094;}
 
-.navButton2{  
-  padding: 15px 5px 13px 5px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #fff;
-  background:#FDC113; 
-}
-
 #sub_page{  
-  max-width: 950px;
-  min-width: 950px;
-  margin: 0 auto;
-  padding: 0 175px 0 175px;
+  width: 80%;
+  min-width: 600px;
+  max-width: 1400px;
+  margin: 0px auto;
   background: #373737;
 }
 .sub_page_header{
-  padding: 0 0 5px 20px;
+  padding: 40px 0 5px 40px;
   color: #fff;
 }
 #no_underline_white{
@@ -248,13 +141,12 @@ padding: 0 0 0 200px;
 #about{
   color: #000;  
   background: #E1E1E1;
-  padding: 0 0 5px 20px;
 }
 #para_A{
   color: #000;
   float:center;
   font-weight: 100;
-  font-size: 150%;  
+  font-size: 20px;  
   text-align: center;
   padding: 80px 200px 80px 250px;
   background: #EAEAEA;
@@ -265,51 +157,48 @@ padding: 0 0 0 200px;
   padding: 70px 10px 0 30px;
 }
 #projects{
-/*padding-bottom: 50px;*/
-  margin-top: 10px;
   color: #fff;  
   background: #444;
 }
 #button_Container{
-  max-width: 950px;
-  min-width: 950px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  /* 
-  background: #EAEAEA;
-  box-shadow: 0 0 10px #fff; */
+  width: 100%;
+  min-width: 600px;
+  max-width: 1400px;  
+  color: #fff;  
+  background: #444;
 }
 .project_Button{
 	display: block;
-	margin: 10px 10px 25px 10px;
+	margin: 10px 10px 10px 10px;
 	padding: 30px 30px 30px 30px;
 	font-size: 26px;
+	font-weight: 200;
 	text-decoration: none;
 	text-align: center;
 	width: 150px;
 	height: 150px;
 	min-width: 150px;
-	color: #333;
+	color: #fff;
 }
 #red{
 	color: #fff;
-	background: #f00;
+	background: #e74c3c;
 	text-decoration: none;
 }
-#red:hover, #red:focus {background:#f88;}
+#red:hover, #red:focus {background:#f99;}
 #red2{
 	color: #fff;
-	background: #f00;
+	background: #e74c3c;
 	text-decoration: none;
 }
 #blue{
-	background: #0cf;
+	background: #3498db;
 	text-decoration: none;
 }
 #blue:hover, #blue:focus {background:#3ef;}
 
 #blue2{
-	background: #0cf;
+	background: #3498db;
 	text-decoration: none;
 }
 
@@ -319,20 +208,21 @@ padding: 0 0 0 200px;
 }
 #green:hover, #green:focus {background:#bef;}
 #orange{
-	background: #fc1;
+	background: #f1c40f;
 	text-decoration: none;
 }
-#orange:hover, #orange:focus {background:#fe4;}
+#orange:hover, #orange:focus {background:#ffd725;}
 #orange2{
-	background: #fc1;
+	background: #f1c40f;
 	text-decoration: none;
 }
 #description{
+	height: 150px;
 	max-width: 150px;
 	min-width: 150px;
 	padding-top: 10px;
 	text-align: center;
-	color: #555;
+	color: #fff;
 	font-size: 16px;
 	font-weight: 100;
 	
@@ -356,9 +246,7 @@ padding: 0 0 0 200px;
 }
 #experience{
   display: block;
-  margin-top: 10px;
   position: absoulte;
-  padding: 0 0 0 10px;
   color: #000;
   background: #E1E1E1;
 }
@@ -370,7 +258,6 @@ padding: 0 0 0 200px;
   padding: 0 0 0 80px;
 }
 #contact{
-  margin-top: 10px;
   color: #fff;  
   background: #444;
 }
@@ -391,89 +278,6 @@ padding: 0 0 0 200px;
 }
 #contact_img:hover, #contact_img:focus {background:#555;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-}
-
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
-}
-
-.tar_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
-}
-
-.tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
-}
-
-#main_content_wrap {
-  background: #FFEBA6;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-}
-
-#main_content {
-  padding-top: 40px;
-}
-
-#footer_wrap {
-  background: #212121;
-}
-
-
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -491,11 +295,6 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
   }
-
-  #project_title {
-  font-size: 32px;
-  }
-
   h1 {
     font-size: 28px;
   }
@@ -519,11 +318,4 @@ Small Device Styles
   h6 {
     font-size: 12px;
   }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
 }
