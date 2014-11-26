@@ -45,8 +45,8 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#eff;
-  background: #373737;
+  color:#ecf0f1;
+  background: #444;
   font-family: 'Calibri';
   -webkit-font-smoothing: antialiased;
 }
@@ -106,28 +106,30 @@ position: fixed;
 top: 0px;
 height: 35px;
 color: #fff;
-padding: 0 0 0 15%;
+padding: 0 0 0 10%;
 }
 
 .navButton{  
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 6px 5px;
   font-size: 20px;
   text-decoration: none;
+  border-radius: 3px;
   color: #fff;
   background:#FDC113; 
 }
 .navButton:hover, .navButton:focus {background:#FCE094;}
 
 #sub_page{  
-  width: 70%;
-  min-width: 600px;
+  width: 80%;
+  min-width: 500px;
   max-width: 1400px;
   margin: 0px auto;
   background: #373737;
 }
 .sub_page_header{
-  padding: 40px 0 5px 40px;
+  padding: 40px 0 5px 10px;
   color: #fff;
+  background: #444;
 }
 #no_underline_white{
 	color: #fff;
@@ -144,26 +146,64 @@ padding: 0 0 0 15%;
 }
 #para_A{
   color: #000;
-  float:center;
+  float:right;
   font-weight: 100;
-  font-size: 20px;  
+  font-size: 20px;
   text-align: center;
-  padding: 80px 200px 80px 250px;
-  background: #EAEAEA;
+  padding: 80px 200px 80px 60px;
+  background: #ecf0f1;
 }
 #avatar_img{ 
   float: left;
   max-width: 150px;
-  padding: 70px 10px 0 30px;
+  border-radius: 70px;
+  border: 5px solid #444;
 }
 #projects{
   color: #fff;  
-  background: #444;
 }
+.column-container {
+    width: 100%;
+	background: #444;
+}
+
+.thirds {
+	margin: 1%;
+    width: 28%;
+	min-width: 300px;
+    height: 175px;
+	
+	font-size: 26px;
+	font-weight: 200;
+	text-decoration: none;
+	transition-duration: 1s;
+	
+    float: left;
+    text-align: center;	
+	padding: 10px;
+	border-radius: 6px;
+}
+.thirds:hover {box-shadow: 0 10px 10px #111;}
+
+.clear{
+	clear: both;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 #button_Container{
-  width: 100%;
-  min-width: 600px;
-  max-width: 1400px;  
+  width: 100%;  
   color: #fff;  
   background: #444;
 }
@@ -184,8 +224,9 @@ padding: 0 0 0 15%;
 	color: #fff;
 	background: #e74c3c;
 	text-decoration: none;
+	transition-duration: 1s;
 }
-#red:hover, #red:focus {background:#f99;}
+#red:hover, #red:focus {background: #f44;}
 #red2{
 	color: #fff;
 	background: #e74c3c;
@@ -193,9 +234,11 @@ padding: 0 0 0 15%;
 }
 #blue{
 	background: #3498db;
+	color: #fff;
 	text-decoration: none;
+	transition-duration: 1s;
 }
-#blue:hover, #blue:focus {background:#3ef;}
+#blue:hover, #blue:focus {background: #47f;}
 
 #blue2{
 	background: #3498db;
@@ -206,29 +249,26 @@ padding: 0 0 0 15%;
 	background: #0d3	;
 	text-decoration: none;
 }
-#green:hover, #green:focus {background:#bef;}
+#green:hover, #green:focus {}
 #orange{
 	background: #f1c40f;
 	text-decoration: none;
+	transition-duration: 1s;
 }
-#orange:hover, #orange:focus {background:#ffd725;}
+#orange:hover, #orange:focus{background: #fd2;}
 #orange2{
 	background: #f1c40f;
 	text-decoration: none;
 }
 #description{
-	height: 150px;
-	max-width: 150px;
-	min-width: 150px;
 	padding-top: 10px;
 	text-align: center;
 	color: #fff;
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 100;
+	text-decoration: none;
 	
 }#description_red{
-	max-width: 150px;
-	min-width: 150px;
 	padding-top: 10px;
 	text-align: center;
 	color: #fff;
@@ -245,6 +285,7 @@ padding: 0 0 0 15%;
   box-shadow: 0 0 10px #fff;
 }
 #experience{
+  margin-top: 50px;
   display: block;
   position: absoulte;
   color: #000;
@@ -260,12 +301,6 @@ padding: 0 0 0 15%;
 #contact{
   color: #fff;  
   background: #444;
-}
-#contact_table{
-	max-width: 950px;
-	min-width: 950px;
-	margin-top: 80px;
-	margin-bottom: 80px;
 }
 #contact_img
   display: block;
