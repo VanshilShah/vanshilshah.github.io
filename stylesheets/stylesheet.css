@@ -183,7 +183,7 @@ padding: 0 0 0 10%;
 	padding: 10px;
 	border-radius: 6px;
 }
-.thirds:hover {box-shadow: 0 10px 10px #111;}
+.thirds:hover {box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);}
 
 .clear{
 	clear: both;
@@ -224,7 +224,7 @@ padding: 0 0 0 10%;
 	color: #fff;
 	background: #e74c3c;
 	text-decoration: none;
-	transition-duration: 1s;
+	transition-duration: .5s;
 }
 #red:hover, #red:focus {background: #f44;}
 #red2{
@@ -236,7 +236,7 @@ padding: 0 0 0 10%;
 	background: #3498db;
 	color: #fff;
 	text-decoration: none;
-	transition-duration: 1s;
+	transition-duration: .5s;
 }
 #blue:hover, #blue:focus {background: #47f;}
 
@@ -253,7 +253,7 @@ padding: 0 0 0 10%;
 #orange{
 	background: #f1c40f;
 	text-decoration: none;
-	transition-duration: 1s;
+	transition-duration: .5s;
 }
 #orange:hover, #orange:focus{background: #fd2;}
 #orange2{
@@ -302,16 +302,27 @@ padding: 0 0 0 10%;
   color: #fff;  
   background: #444;
 }
-#contact_img
-  display: block;
-  float: left;
-  color: #fff;
-  font-size: 30px;
-  max-width: 200px;
-  padding: 10px 20px 10px 20px;
-  background: #444;
+.quarters {
+	margin: 1%;
+    width: 20%;
+    height: 33px;
+	
+	font-size: 30px;
+	font-weight: 200;
+	text-decoration: none;
+	transition-duration: .5s;
+	
+    float: left;
+    text-align: left;	
+	border-radius: 6px;
+	border: 1px dashed #666;
 }
-#contact_img:hover, #contact_img:focus {background:#555;}
+.quarters:hover {box-shadow: 0 10px 10px #111;}
+
+.contact_img{
+  display: inline-block;
+  max-width: 30px;
+}
 
 /*******************************************************************************
 Small Device Styles
