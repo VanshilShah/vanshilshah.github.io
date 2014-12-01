@@ -19,7 +19,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -305,6 +304,7 @@ padding: 0 0 0 10%;
 .quarters {
 	margin: 1%;
     width: 20%;
+	min-width: 230px;
     height: 33px;
 	
 	font-size: 30px;
