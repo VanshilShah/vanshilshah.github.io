@@ -89,7 +89,7 @@ h6 {
 a {
 	text-decoration: none;
 	font-weight: 200;
-	color: #000;
+	color: #494C4E;
 }
 a:hover, a:focus {text-decoration: underline;}
 footer {
@@ -169,22 +169,22 @@ padding: 0 0 0 10%;
 }
 
 .thirds {
-	margin: 1%;
-    width: 28%;
+	margin: 0.5%;
+    width: 30%;
 	min-width: 300px;
     height: 175px;
 	
 	font-size: 26px;
-	font-weight: 200;
-	text-decoration: none;
+	font-weight: 700;
 	transition-duration: .5s;
-	
+	text-decoration: underline;
     float: left;
     text-align: center;	
 	padding: 10px;
-	border-radius: 6px;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
 }
-.thirds:hover {box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);}
+.thirds:hover {text-decoration: none; box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);}
 
 .clear{
 	clear: both;
@@ -247,11 +247,11 @@ padding: 0 0 0 10%;
 	text-decoration: none;
 }
 
-#grey{
+.grey{
 	background: #ecf0f1;
 	text-decoration: none;
 }
-#grey:hover, #grey:focus {background: #7f8c8d;}
+.grey:hover, .grey:focus {background: #7f8c8d;}
 #orange{
 	background: #f1c40f;
 	text-decoration: none;
@@ -262,7 +262,7 @@ padding: 0 0 0 10%;
 	background: #f1c40f;
 	text-decoration: none;
 }
-#description{
+.description{
 	text-align: center;
 	color: #000;
 	font-size: 20px;
