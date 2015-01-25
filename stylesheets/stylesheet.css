@@ -120,6 +120,7 @@ padding: 0 0 0 10%;
 .navButton:hover, .navButton:focus {background:#FCE094;}
 iframe[id^='twitter-widget-']{
 	width: 100% !important;
+	height: 540px !important;
 }
 #sub_page{  
   width: 82%;
