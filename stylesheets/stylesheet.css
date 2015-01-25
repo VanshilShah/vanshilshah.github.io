@@ -118,12 +118,14 @@ padding: 0 0 0 10%;
   background:#FDC113; 
 }
 .navButton:hover, .navButton:focus {background:#FCE094;}
-
+iframe[id^='twitter-widget-']{
+	width: 100% !important;
+}
 #sub_page{  
   width: 82%;
-  min-width: 500px;
+  min-width: 650px;
   max-width: 1400px;
-  height: 97vh;
+  height: 98vh;
   min-height: 720px;
   max-height: 850px;
   margin: 0px auto;
@@ -391,5 +393,5 @@ Small Device Styles
   max-height: 750px;
   margin: 0px auto;
   /*background: #373737;*/
-}
+  }
 }
