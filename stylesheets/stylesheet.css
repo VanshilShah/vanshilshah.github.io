@@ -124,6 +124,7 @@ padding: 0 0 0 10%;
   min-width: 500px;
   max-width: 1400px;
   height: 97vh;
+  min-height: 720px;
   max-height: 850px;
   margin: 0px auto;
   /*background: #373737;*/
@@ -381,4 +382,14 @@ Small Device Styles
   h6 {
     font-size: 12px;
   }
+  #sub_page{  
+  width: 82%;
+  min-width: 500px;
+  max-width: 1400px;
+  height: 97vh;
+  min-height: 500px;
+  max-height: 750px;
+  margin: 0px auto;
+  /*background: #373737;*/
+}
 }
