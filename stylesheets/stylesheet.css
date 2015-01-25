@@ -124,6 +124,7 @@ padding: 0 0 0 10%;
   min-width: 500px;
   max-width: 1400px;
   height: 97vh;
+  max-height: 850px;
   margin: 0px auto;
   /*background: #373737;*/
 }
