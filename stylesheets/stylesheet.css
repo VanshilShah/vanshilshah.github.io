@@ -126,14 +126,14 @@ iframe[id^='twitter-widget-']{
   width: 82%;
   min-width: 650px;
   max-width: 1400px;
-  height: 98vh;
-  min-height: 720px;
+  height: 96vh;
+  min-height: 500px;
   max-height: 850px;
   margin: 0px auto;
   /*background: #373737;*/
 }
 .sub_border{
-	padding: 25px 0 15px 0;
+	padding: 27px 0 15px 0;
 	border: 1px dashed #666;
 }
 .sub_page_header{
