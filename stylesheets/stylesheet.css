@@ -351,7 +351,7 @@ color: #000}
 	transition-duration: .5s;
     text-align: center;	
 	border-radius: 6px;
-	border: 1px dashed #666;
+	border: 1px dashed #fff;
 }
 .quarters:hover {box-shadow: 0 10px 10px #111;}
 
