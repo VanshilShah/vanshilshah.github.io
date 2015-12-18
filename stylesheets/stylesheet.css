@@ -298,6 +298,10 @@ color: #000}
 .navy_hover:hover, .navy_hover:focus{
     background: #F2E5D2;
     color: #000;}
+
+.tan{
+    background: #F2E5D2
+}
 .description{
 	text-align: center;
 	color: inherit;
