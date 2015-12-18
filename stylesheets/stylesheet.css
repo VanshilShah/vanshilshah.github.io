@@ -101,66 +101,66 @@ footer {
 Full-Width Styles
 *******************************************************************************/
 .nav{
-display: block;
-position: fixed;
+position: fixed;    
 top: 0px;
-height: 35px;
-color: #fff;
-padding: 0 0 0 10%;
+width: 100vw;
+color: #fff;    
+border-bottom:2px dashed #fff;
+    height: 35px;
+}
+
+.nav > div {
+    height: 35px;
+    min-width: 405px;
+    max-width: 1080px;
+    margin: auto;
 }
 
 .navButton{  
-  padding: 5px 5px 6px 5px;
+  height: 35px;
+  padding: 5px;
   font-size: 20px;
   text-decoration: none;
   border-radius: 3px;
-  color: #fff;
-  background:#FDC113; 
 }
-.navButton:hover, .navButton:focus {background:#FCE094;}
-iframe[id^='twitter-widget-']{
-	width: 100% !important;
-	height: 540px !important;
-}
-#sub_page{  
-  width: 82%;
-  min-width: 650px;
-  max-width: 1400px;
-  height: 96vh;
-  min-height: 500px;
-  max-height: 850px;
+.sub_page{
+  overflow: hidden;
+  min-width: 405dp;
+  max-width: 1080px;
+  height: 95%;    
+  min-height: 740px;
+  max-height: 1080px;
   margin: 0px auto;
+  padding: 27px 0 0 0;
   /*background: #373737;*/
 }
 .sub_border{
-	padding: 27px 0 15px 0;
-	border: 1px dashed #666;
+	border: 1px dashed #fff;
 }
 .sub_page_header{
-  padding: 0px 0 5px 10px;
+  padding-left: 10px;
+  padding-top: 10px;    
   color: #000;
-  /*background: #494C4E;*/
 }
-#no_underline_white{
-	color: #fff;
-	text-decoration: none;
-	padding: 15px 5px 13px 5px;
+.no_underline{
+    color: inherit;
+    text-decoration: none;
 }
-#no_underline_black{
-	color: #000;
-	text-decoration: none;
+.no_underline:hover, .no_underline:focus{
+    text-decoration: none;
 }
+
 #about{
   color: #000;  
   /*background: #494C4E;*/
 }
-#para_A{
-  color: #000;
-  float:right;
+.para_A{
+  color: #222;
   font-weight: 100;
   font-size: 20px;
   text-align: center;
-  padding: 150px 425px 80px 60px;
+  margin-right: 250px;
+  text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;
   /*background: #f1c40f;*/
   border-radius: 4px;
 }
@@ -175,33 +175,35 @@ iframe[id^='twitter-widget-']{
 }
 .column-container {
     width: 100%;
+    position: right;
+    overflow: hidden ;
 	/*background: #494C4E;*/
 }
 
 .thirds {
-	margin: 0.5%;
+    display: inline-table;
+	margin: .5%;
     width: 30%;
 	min-width: 300px;
-    height: 175px;
-	
+    height: 175px;	
 	font-size: 26px;
 	font-weight: 700;
 	transition-duration: .5s;
 	text-decoration: underline;
-    float: left;
     text-align: center;	
 	padding: 10px;
-	border: 1px dashed #ccc;
+	border: 1px dashed #fff;
 	border-radius: 4px;
 }
-.thirds:hover {text-decoration: none; box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);}
+.thirds:hover {text-decoration: none; box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);
+color: #000}
 
 .clear{
 	clear: both;
 }
 .clearfix:after {
      visibility: hidden;
-     display: block;
+     display: inline-block;
      font-size: 0;
      content: " ";
      clear: both;
@@ -243,6 +245,7 @@ iframe[id^='twitter-widget-']{
 	background: #e74c3c;
 	text-decoration: none;
 }
+#video{}
 #blue{
 	background: #3498db;
 	color: #fff;
@@ -278,9 +281,26 @@ iframe[id^='twitter-widget-']{
 	background: #f1c40f;
 	text-decoration: none;
 }
+.navy{
+	background: #1C2B3A;
+	text-decoration: none;
+}
+.white{
+	background: #fff;
+	text-decoration: none;
+}
+.navy_hover{
+	transition-duration: .5s;
+	background: #1C2B3A;
+    color: #fff;
+	text-decoration: none;
+}
+.navy_hover:hover, .navy_hover:focus{
+    background: #F2E5D2;
+    color: #000;}
 .description{
 	text-align: center;
-	color: #000;
+	color: inherit;
 	font-size: 20px;
 	font-weight: 100;
 	padding: 15px;
@@ -303,13 +323,11 @@ iframe[id^='twitter-widget-']{
   box-shadow: 0 0 10px #fff;
 }
 #experience{
-  margin-top: 10px;
   color: #fff;
-  background: #446CB3;
 }
 .para_E{
   color: #000;
-  background: #EAEAEA;
+  background: #fff;
   font-weight: 100;
   text-align: left;
   padding: 80px 0 80px 100px;
@@ -319,29 +337,26 @@ iframe[id^='twitter-widget-']{
 	padding-left: 30px;
 }
 #contact{
-  color: #fff;  
-  background: #446CB3;
 }
 .quarters {
+    display: inline-table;
 	margin: 1%;
     width: 20%;
 	min-width: 230px;
-    height: 33px;
-	
+    height: 35px;	
+    padding: 5px;
 	font-size: 30px;
 	font-weight: 200;
 	text-decoration: none;
 	transition-duration: .5s;
-	
-    float: left;
-    text-align: left;	
+    text-align: center;	
 	border-radius: 6px;
 	border: 1px dashed #666;
 }
 .quarters:hover {box-shadow: 0 10px 10px #111;}
 
 .contact_img{
-  display: inline-block;
+  display: inline-table;
   max-width: 30px;
 }
 
@@ -385,7 +400,7 @@ Small Device Styles
   h6 {
     font-size: 12px;
   }
-  #sub_page{  
+  .sub_page{  
   width: 82%;
   min-width: 500px;
   max-width: 1400px;
