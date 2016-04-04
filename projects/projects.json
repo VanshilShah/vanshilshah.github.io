@@ -1,0 +1,175 @@
+{"projects" : [
+    
+    {
+        "name" : "MyOwnTrainer",
+		"description" : "Personal Fitness App that connects with a MYO Armband. Third Place at Ryerson Sportshack",
+		"categories" : ["android"],
+		"subpages" : [
+            {
+                "type" : "text",
+                "header" : "MyOwnTrainer",
+                "backgroundURL" : "images/mot_logo.png",
+                "value" : "MyOwnTrainer is an app that monitors the number of reps that the user does by collecting and analyzing data from the Myo Armband. Created by a team of 4, winning Third Place at SportsHack. Bruce Croxon judged the event and gave our team feedback on the App."
+            },
+            {
+                "type" : "video",
+                "header" : "Video",
+                "value" : "https://www.youtube.com/embed/ThBuPcjc2LQ?      playlist=&version=3&start=146&theme=light"
+            },
+            {
+                "type" : "link",
+                "header" : "GitHub",
+                "value" : "https://github.com/Alextrovert/MYOwnTrainer"            
+            }
+        ]
+    },
+    
+    {
+        "name" : "Blizzard XIV",
+        "description" : "Annual FRC Robot created by a highschool robotics team that I mentor.",
+        "categories" : ["hardware", "featured", "robotics"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "Blizzard XIV", 
+                "backgroundURL" : "images/xiv_logo.png",
+                "value" : "Meet Blizzard XIV. This robot is designed to compete in the annual First Robotics Competition. The robot was designed, machined and built by a team of 30 students that I lead when I was in 12th grade. I am currently a mentor for  <a href=\"http://www.team188.com/web/index.php\"> Team 188</a> focusing on the enrichment and education of the students on the team."
+            },
+            {
+                "type" : "video",
+                "header" : "Video",
+                "value" : "https://www.youtube.com/embed/_1wBGUaCzUg?playlist=&version=3&theme=light"
+            }
+        ]
+    },
+    
+    {
+        "name" : "OneMark",
+        "description" : "Unique App created to allow TDSB students to access all of their marks in one intuitive UI. Second Place at MARS EdAppHack",
+        "categories" : ["android"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "OneMark",
+                "backgroundURL" : "images/onemark_logo.png",
+                "value" : "OneMark is an app that grabs students' marks from their online classrooms and displays them in a simple yet informative user interface. Created by a team of 6, winning Second Place at <a href=\"http://edapphack.com/\"> EdAppHack </a>."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/DLDIfhur9DI?playlist=&version=3&theme=light"
+            },
+            {
+                "type" : "link",
+                "header" : "GitHub",
+                "value" : "https://github.com/VanshilShah/onemark"            
+            }
+        ]
+    },
+    {
+        "name" : "Vex",
+        "description" : "Annual VEX Robot created using VEX Robotics parts and geared towards the Vex Robotics Competition. Regional Semifinalists: (2012, 2013, 2014).",
+        "categories" : ["hardware", "robotics"],
+        "subpages" : [
+            {
+                "type" : "text", 
+                "header" : "Vex Robotics",
+                "backgroundURL" : "images/skyrise.png",
+                "value" : "This robot was designed to compete in the 2014 Vex Robotics Competition. I designed and built this robot with a team of 4 other students, while I was in 12th grade."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/7YNgHzFswxg?playlist=&version=3&theme=light"
+            }
+        ]      
+    },
+    {
+        "name" : "QuadCopter",
+        "description" : "I designed and built a Quadcopter from scratch using Arduino and programming an Android App to control it.",
+        "categories" : ["hardware", "featured"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "My Quadcopter",
+                "backgroundURL" : "images/quad.jpg",
+                "value" : "For my grade 12 Tech Design Project, I chose to design and build my own Quadcopter. I sourced some parts online and am on target to complete the project by May. Check out my latest update which showcases the Android App communicating with the Arduino to control a servo."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/s2xuPrPEb1k?playlist=&version=3&theme=light"
+            }
+        ]
+    },
+    {
+        "name" : "PhysicsWorld",
+        "description" : "Physics Simulation App created for a Grade 11 Computer Science Assignment. (My first Android App)",
+        "categories" : ["android"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "PhysicsWorld",
+                "backgroundURL" : "images/pw_logo.png",
+                "value" : "Physics World is an app that allows users to simulate physics problems in a 2D-Physics Engine that I programmed myself. The entire app was created by a team of 4 Grade 11 students for Computer Science Project."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/JWCvlOtBVsA?playlist=&version=3&theme=light"
+            },
+            {
+                "type" : "link",
+                "header" : "GitHub",
+                "value" : "https://github.com/VanshilShah/PhysicsWorld"            
+            }
+        ]
+    },
+    {
+        "name" : "BinLoco",
+        "description" : "In partnership with the City of Toronto, we used Open Data to create an app that navigates the user to the closest garbage or recycling bin.",
+        "categories" : ["android"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "BinLoco",
+                "backgroundURL" : "images/binloco_logo.png",
+                "value" : "Working with Open Data provided by the City of Toronto the team and I programmed an app that finds the closest garbage or recycling bin to the user. The app was decided as the best app and presentation by the Judges."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/a7SDdCtUk5Q?theme=light"                
+            },
+            {
+                "type" : "link",
+                "header" : "GitHub",
+                "value" : "https://github.com/VanshilShah/BinLoco"
+            }
+        ]
+    },
+    {
+        "name" : "ImAgenda",
+        "description" : "This app lets you take the picture of a printed schedule and converts it into events you can save in your phone.",
+        "categories" : ["android", "featured"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "ImAgenda",
+                "backgroundURL" : "images/imagenda_logo.png",
+                "value" : "I created this app with a team of two other students while I was at PennApps Hackathon. I did most of the android work on the app as well as coming up with the hueristics for a simple algorithm that corrected typos from the OCR and parsed the information into multiple events(as opposed to the one string that we received from our OCR.) I also designed the UI and the Logo."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://www.youtube.com/embed/M93FgjKFDrs?theme=light"
+            },
+            {
+                "type" : "link",
+                "header" : "GitHub",
+                "value" : "https://github.com/danielchristopher1/PennAppsXII"
+            }
+        ]
+        
+    }
+]}

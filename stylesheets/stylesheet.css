@@ -119,6 +119,7 @@ border-bottom:2px dashed #fff;
 .navButton{  
   height: 35px;
   padding: 5px;
+  margin: 0 2px 0 2px;
   font-size: 20px;
   text-decoration: none;
   border-radius: 3px;
@@ -127,19 +128,18 @@ border-bottom:2px dashed #fff;
   overflow: hidden;
   min-width: 405dp;
   max-width: 1080px;
-  height: 95%;    
-  min-height: 740px;
-  max-height: 1080px;
   margin: 0px auto;
-  padding: 27px 0 0 0;
+  padding: 40px 0 40px 0;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  background-position: right bottom;
   /*background: #373737;*/
 }
 .sub_border{
 	border: 1px dashed #fff;
 }
 .sub_page_header{
-  padding-left: 10px;
-  padding-top: 10px;    
+  padding-left: 10px;  
   color: #000;
 }
 .no_underline{
@@ -160,6 +160,7 @@ border-bottom:2px dashed #fff;
   font-size: 20px;
   text-align: center;
   margin-right: 250px;
+  padding: 0 10% 0 10%;    
   text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;
   /*background: #f1c40f;*/
   border-radius: 4px;
@@ -171,7 +172,7 @@ border-bottom:2px dashed #fff;
   border: 5px solid #494C4E;
 }
 #projects{
-  color: #000;  
+  color: #000;
 }
 .column-container {
     width: 100%;
