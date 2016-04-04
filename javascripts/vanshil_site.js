@@ -23,10 +23,12 @@ function loadProjects(){
        for(var i in all_projects){
            var project = all_projects[i];
            console.log(project.name);
-           var proj_button = createProjectButton(project.name, project.description, 'projects/' + project.name.replace(' ', '_') + '.html');
+           var path = 'projects/' + project.name.replace(' ', '_') + '.html';
+           path = path.toLowerCase();
+           var proj_button = createProjectButton(project.name, project.description, path);
            
             if($.inArray('featured', project.categories) > -1){//looks for 'featured in the categories.
-                var feat_button = createProjectButton(project.name, project.description, 'projects/' + project.name.replace(' ', '_') + '.html');
+                var feat_button = createProjectButton(project.name, project.description, path);
                 featured.appendChild(feat_button);
             }
             if($.inArray('android', project.categories) > -1){

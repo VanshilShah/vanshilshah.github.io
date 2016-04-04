@@ -9,7 +9,7 @@ with open('projects.json') as json_data:
     for i in range(len(projects_list)):
     	project = projects_list[i]
     	space_name = project['name']
-    	name = space_name.replace(' ', '_')
+    	name = space_name.replace(' ', '_').lower()
     	project_file = open(name + '.html', 'w')
     	project_file.write('''<!DOCTYPE html>
 <html
