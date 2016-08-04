@@ -16,7 +16,7 @@ function readFile(index){
         for(var i in project.subpages){
             var subpage = project.subpages[i];
             createSubPage(subpage);
-           
+
         }
     });
 }
@@ -25,13 +25,13 @@ function readFile(index){
 function createNavBar(){
     var navBar = createElement('div', 'nav navy');
     navInner = createElement('div', 'navy');
-    
+
     navBar.appendChild(navInner);
-    
+
     navInner.appendChild(createNavButton('Home', '../index.html#about'));
     navInner.appendChild(createNavButton('Projects', '../index.html#projects'));
-    
-    return navBar;    
+
+    return navBar;
 }
 function createNavButton(text, reference){
     var element = createElement('a', 'navButton navy_hover no_underline smoothScroll');
@@ -58,12 +58,12 @@ function createSubPage(subpage){
             var style = 'background-image: url(../' + subpage.backgroundURL + ');'
             page.setAttribute('style', style);
         }
-        
+
         border.appendChild(page);
         body.append(border);
     }
-    
-    
+
+
 }
 
 function createHeader(title){
@@ -74,9 +74,11 @@ function createHeader(title){
 
 function createText(subpage, page){
     if(subpage.header){
-        page.appendChild(createHeader(subpage.header));    
+        page.appendChild(createHeader(subpage.header));
     }
     var para = createElement('p', 'para_A');
+        var style = 'margin-right: 150px;'
+    para.setAttribute('style', style);
     para.innerHTML = subpage.value;
     page.appendChild(para);
 }
@@ -97,7 +99,7 @@ function createVideo(subpage, page){
 }
 
 function createImage(){
-    
+
 }
 
 
@@ -111,10 +113,10 @@ function createElement(elementType, elementClasses){
 function createElement(elementType, elementClasses, elementID){
     var element = document.createElement(elementType);
     if(elementClasses){
-        element.setAttribute("class", elementClasses);   
+        element.setAttribute("class", elementClasses);
     }
     if(elementID){
-        element.setAttribute("id", elementID);    
-    }    
+        element.setAttribute("id", elementID);
+    }
     return element;
 }
