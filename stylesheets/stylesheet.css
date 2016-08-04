@@ -46,43 +46,44 @@ body {
   box-sizing: border-box;
   color:#ecf0f1;
   background: #fefeff;
-  font-family: 'Calibri';
+  /*font-family: 'Arial', sans-serif;*/
+  font-family: 'Galdeano', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color:#000;
-  font:  'Calibri;
+
   letter-spacing: -1px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 100;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 100;
 }
 
 h3 {
-  font-size: 34px;
+  font-size: 38px;
   font-weight: 100;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 100;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 100;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -101,10 +102,10 @@ footer {
 Full-Width Styles
 *******************************************************************************/
 .nav{
-position: fixed;    
+position: fixed;
 top: 0px;
 width: 100vw;
-color: #fff;    
+color: #fff;
 border-bottom:2px dashed #fff;
     height: 35px;
 }
@@ -116,11 +117,11 @@ border-bottom:2px dashed #fff;
     margin: auto;
 }
 
-.navButton{  
+.navButton{
   height: 35px;
   padding: 5px;
   margin: 0 2px 0 2px;
-  font-size: 20px;
+  font-size: 24px;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -139,8 +140,9 @@ border-bottom:2px dashed #fff;
 	border: 1px dashed #fff;
 }
 .sub_page_header{
-  padding-left: 10px;  
+  padding-left: 10px;
   color: #000;
+  margin-bottom: 20px;
 }
 .no_underline{
     color: inherit;
@@ -151,21 +153,21 @@ border-bottom:2px dashed #fff;
 }
 
 #about{
-  color: #000;  
-  /*background: #494C4E;*/
+  color: #000;
+  background: #494C4E;
 }
 .para_A{
-  color: #222;
+  color: #34495E;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
-  margin-right: 250px;
-  padding: 0 10% 0 10%;    
+  margin-right: 0px;
+  padding: 0 10% 0 10%;
   text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;
   /*background: #f1c40f;*/
   border-radius: 4px;
 }
-#avatar_img{ 
+#avatar_img{
   float: left;
   max-width: 150px;
   border-radius: 70px;
@@ -186,12 +188,12 @@ border-bottom:2px dashed #fff;
 	margin: .5%;
     width: 30%;
 	min-width: 300px;
-    height: 175px;	
-	font-size: 26px;
+    height: 175px;
+	font-size: 30px;
 	font-weight: 700;
 	transition-duration: .5s;
 	text-decoration: underline;
-    text-align: center;	
+    text-align: center;
 	padding: 10px;
 	border: 1px dashed #fff;
 	border-radius: 4px;
@@ -217,15 +219,15 @@ color: #000}
 /* close commented backslash hack */
 
 #button_Container{
-  width: 100%;  
-  color: #fff;  
+  width: 100%;
+  color: #fff;
   background: #494C4E;
 }
 .project_Button{
 	display: block;
 	margin: 10px 10px 10px 10px;
 	padding: 30px 30px 30px 30px;
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 200;
 	text-decoration: none;
 	text-align: center;
@@ -306,23 +308,23 @@ color: #000}
 .description{
 	text-align: center;
 	color: inherit;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 100;
 	padding: 15px;
 	text-decoration: none;
-	
+
 }#description_red{
 	padding-top: 10px;
 	text-align: center;
 	color: #fff;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 100;
 }
 #para_P{
   color: #000;
   background: #EAEAEA;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   padding: 80px 200px 80px 250px;
   box-shadow: 0 0 10px #fff;
@@ -336,7 +338,7 @@ color: #000}
   font-weight: 100;
   text-align: left;
   padding: 80px 0 80px 100px;
-  border-radius: 4px;  
+  border-radius: 4px;
 }
 .bullet{
 	padding-left: 30px;
@@ -348,13 +350,13 @@ color: #000}
 	margin: 1%;
     width: 20%;
 	min-width: 230px;
-    height: 35px;	
+    height: 35px;
     padding: 5px;
-	font-size: 30px;
+	font-size: 34px;
 	font-weight: 200;
 	text-decoration: none;
 	transition-duration: .5s;
-    text-align: center;	
+    text-align: center;
 	border-radius: 6px;
 	border: 1px dashed #fff;
 }
@@ -371,7 +373,7 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
   body {
-    font-size:14px;
+    font-size:18px;
   }
 
   #downloads {
@@ -383,29 +385,29 @@ Small Device Styles
     max-width: 480px;
   }
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 21px;
+    font-size: 25px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   h5 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   h6 {
-    font-size: 12px;
+    font-size: 16px;
   }
-  .sub_page{  
+  .sub_page{
   width: 82%;
   min-width: 500px;
   max-width: 1400px;
