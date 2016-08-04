@@ -24,6 +24,7 @@ with open('projects.json') as json_data:
       ga('send', 'pageview');
 
     </script>
+	<link href="https://fonts.googleapis.com/css?family=Galdeano" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
 	<title>Vanshil - ''' + space_name + '''</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
