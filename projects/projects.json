@@ -92,7 +92,7 @@
     {
         "name" : "QuadCopter",
         "description" : "I designed and built a Quadcopter from scratch using Arduino and programming an Android App to control it.",
-        "categories" : ["hardware", "featured"],
+        "categories" : ["hardware"],
         "subpages" : [
             {
                 "type" : "text",
@@ -180,13 +180,13 @@
     {
         "name" : "Nutty Ninjas",
         "description" : "For my 11th grade final project, I created a game that featured an advanced AI.",
-        "categories" : ["android", "featured"],
+        "categories" : ["java", "featured"],
         "subpages" : [
             {
                 "type" : "text",
                 "header" : "Nutty Ninjas",
-                "backgroundURL" : "images/nnai.png",
-                "value" : "A game about battling ninjas that I made for my grade 11 final project. The built-in AI uses a machine learning algorithm capable of learning and executing complex time-sensitive strategies."
+                "backgroundURL" : "images/nnhuman.png",
+                "value" : "A game about battling ninjas that I made for my grade 11 final project. The built-in AI uses a machine learning algorithm capable of learning and executing complex time-sensitive strategies in less than 10 matches against a smart opponent."
             },
             {
                 "type" : "video",
@@ -198,11 +198,13 @@
                 "header" : "How it works",
                 "backgroundURL" : "images/nnai.png",
                 "value" : [ "Let's break down how the AI learns:",
-                            "Step 1: There are 40 text files each represeneting a time slot(at the moment the time slots are 6 seconds each)in the game. These files start out empty.",
-                            "Step 2: Each Fighter keeps a log of it's activities and stores them into an array at the end of every timeframe.",
-                            "Step 3: When a fighter dies, or it wins the game. It's log is stored into the text files in the following process: The fighter's actions during the first timeframe as well as whether or not the fighter won is stored in 'aiMemory1.txt', the second timeframe as well as whether or not the fighter won in 'aiMemory2.txt' and so on.",
-                            "Step 4: The next time the game is played, during the first timeframe, the game will load in the success rate for each action into variables in the game class. For example: An AI one who one the game, started off by buying a gold buillding in the first timeframe. If only one game has been played, the success rate of buying a gold building in the first timeframe is 100%.",
-                            "Step 5: The Fighter AIs mutliply their decisions with the success rates. Thus, the AI is more likely to choose to execute the more successful action."
+                            "There are 40 text files each representing a time slot (at the moment the time slots are 6 seconds each) in the game. These files start out empty.",
+                            "Each Fighter keeps a log of it's activities and stores them into an array at the end of every timeframe. Even the human controlled fighters will keep a record of the action being executed.",
+                            "When a fighter dies, or it wins the game. It's log is stored into the text files in the following way: The fighter's actions during the first timeframe as well as whether or not the fighter won is stored in 'aiMemory1.txt', it's actions and success for the next timeframe is stored in 'aiMemory2.txt' and so on for the next 38 timeframes.",
+                            "The next time the game is played the AI will load in the success rate for each action into variables in the game class.",
+                            "Consider this example: An AI who one the game, started off by buying a gold buillding in the first timeframe. If only one game has been played, the success rate of buying a gold building in the first timeframe is 100%.",
+                            "The Fighter AIs mutliply their decisions with the success rates. Thus, the AI is more likely to choose to execute the more successful action.",
+                            "This way the AI is capable of executing long-term strategies instead of doing the same -very predictable- action the entire game."
                           ]
             },
             {

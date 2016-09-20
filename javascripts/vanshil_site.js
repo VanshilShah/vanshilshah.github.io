@@ -11,22 +11,22 @@ function loadProjects(){
    jQuery.getJSON('projects/projects.json', function(data) {
        projects_featured = createElement('div');
        projects_all = createElement('div');
-       
+
        var featured = createElement('div');
-       
+
        var android = createElement('div');
        var java = createElement('div');
        var hardware = createElement('div');
-       
+
        var all_projects = data.projects;
-       
+
        for(var i in all_projects){
            var project = all_projects[i];
            console.log(project.name);
            var path = 'projects/' + project.name.replace(' ', '_') + '.html';
            path = path.toLowerCase();
            var proj_button = createProjectButton(project.name, project.description, path);
-           
+
             if($.inArray('featured', project.categories) > -1){//looks for 'featured in the categories.
                 var feat_button = createProjectButton(project.name, project.description, path);
                 featured.appendChild(feat_button);
@@ -44,23 +44,23 @@ function loadProjects(){
        }
        projects_featured.appendChild(createHeader('Featured Projects'));
        projects_featured.appendChild(featured);
-       
+
        projects_all.appendChild(createHeader('Android'));
        projects_all.appendChild(android);
-    /*   
+
        projects_all.appendChild(createHeader('Java'));
-       projects_all.appendChild(java);*/
+       projects_all.appendChild(java);
        
        projects_all.appendChild(createHeader('Hardware / Robotics'));
        projects_all.appendChild(hardware);
        projects_all.style.display = 'none';
-       
+
        projects_page.append(projects_featured);
        projects_page.append(projects_all);
        length = all_projects.length;
        setUpAllButton();
-       
-   
+
+
    });
 }
 
@@ -116,10 +116,10 @@ function createElement(elementType, elementClasses){
 function createElement(elementType, elementClasses, elementID){
     var element = document.createElement(elementType);
     if(elementClasses){
-        element.setAttribute("class", elementClasses);   
+        element.setAttribute("class", elementClasses);
     }
     if(elementID){
-        element.setAttribute("id", elementID);    
-    }    
+        element.setAttribute("id", elementID);
+    }
     return element;
 }
