@@ -191,13 +191,18 @@
             {
                 "type" : "video",
                 "header" : "Demo",
-                "value" : "https://www.youtube.com/embed/M93FgjKFDrs?theme=light"
+                "value" : "https://www.youtube.com/embed/tA8FWHySZGg?theme=light"
             },
             {
-                "type" : "text",
+                "type" : "list",
                 "header" : "How it works",
                 "backgroundURL" : "images/nnai.png",
-                "value" : "Let's break down how the AI learns:\nStep 1: There are 40 text files each represeneting a time slot(at the moment the time slots are 6 seconds each)in the game. These files start out empty.\nStep 2: Each Fighter keeps a log of it's activities and stores them into an array at the end of every timeframe.\nStep 3: When a fighter dies, or it wins the game. It's log is stored into the text files in the following process: \nThe fighter's actions during the first timeframe as well as whether or not the fighter won is stored in 'aiMemory1.txt',\nthe second timeframe as well as whether or not the fighter won in 'aiMemory2.txt' and so on.\nStep 4: The next time the game is played, during the first timeframe, the game will load in the success rate for each action into variables in the game class.\n For example: An AI one who one the game, started off by buying a gold buillding in the first timeframe. If only one game has been played, the success rate of buying a gold building in the first timeframe is 100%.\nStep 5: The Fighter AIs mutliply their decisions with the success rates. Thus, the AI is more likely to choose to execute the more successful action."
+                "value" : [ "Let's break down how the AI learns:",
+                            "Step 1: There are 40 text files each represeneting a time slot(at the moment the time slots are 6 seconds each)in the game. These files start out empty.",
+                            "Step 2: Each Fighter keeps a log of it's activities and stores them into an array at the end of every timeframe.",
+                            "Step 3: When a fighter dies, or it wins the game. It's log is stored into the text files in the following process: The fighter's actions during the first timeframe as well as whether or not the fighter won is stored in 'aiMemory1.txt', the second timeframe as well as whether or not the fighter won in 'aiMemory2.txt' and so on.",
+                            "Step 4: The next time the game is played, during the first timeframe, the game will load in the success rate for each action into variables in the game class. For example: An AI one who one the game, started off by buying a gold buillding in the first timeframe. If only one game has been played, the success rate of buying a gold building in the first timeframe is 100%.",
+                            "Step 5: The Fighter AIs mutliply their decisions with the success rates. Thus, the AI is more likely to choose to execute the more successful action."
             },
             {
                 "type" : "link",

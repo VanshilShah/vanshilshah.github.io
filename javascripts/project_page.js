@@ -51,6 +51,9 @@ function createSubPage(subpage){
         if(subpage.type == "text"){
             createText(subpage, page);
         }
+        else if(subpage.type == "list"){
+            createList(subpage, page);
+        }
         else if(subpage.type == "video"){
             createVideo(subpage, page);
         }
@@ -80,6 +83,23 @@ function createText(subpage, page){
         var style = 'margin-right: 150px;'
     para.setAttribute('style', style);
     para.innerHTML = subpage.value;
+    page.appendChild(para);
+}
+function createList(subpage, page){
+    if(subpage.header){
+        page.appendChild(createHeader(subpage.header));
+            navInner.appendChild(createNavButton(subpage.header, '#' + subpage.header));
+        page.setAttribute('id', subpage.header);
+    }
+
+    var para = createElement('p', 'para_A');
+        var style = 'margin-right: 150px;'
+    para.setAttribute('style', style);
+    for(let i = 0; i < subpage.value.length; i++){
+      let element = createElement('p');
+      element.innerHTML = subpage.value[i];
+      para.appendChild(element);
+    }
     page.appendChild(para);
 }
 
