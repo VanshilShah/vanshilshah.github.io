@@ -98,6 +98,7 @@ function createList(subpage, page){
     for(let i = 0; i < subpage.value.length; i++){
       let element = createElement('p');
       element.innerHTML = subpage.value[i];
+      element.setAttribute('class', 'listItem');
       para.appendChild(element);
     }
     page.appendChild(para);
