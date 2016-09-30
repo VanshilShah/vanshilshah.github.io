@@ -3,7 +3,8 @@
 
 var body = $('body')
 var navInner;
-
+var project;
+var navItems = [];
 function generate(index){
     readFile(index);
 }
@@ -11,50 +12,61 @@ function generate(index){
 function readFile(index){
     "use strict";
     jQuery.getJSON('../projects/projects.json', function(all_projects) {
-        var project = all_projects.projects[index];
+        project = all_projects.projects[index];
         body.append(createNavBar(project));
         for(var i in project.subpages){
             var subpage = project.subpages[i];
             createSubPage(subpage);
-
         }
+        appendNavItems();
     });
 }
 
+function appendNavItems(){
+  for(let i = navItems.length - 1; i >= 0; i--){
+    navInner.appendChild(navItems[i]);
+  }
+}
 
-function createNavBar(){
-    var navBar = createElement('div', 'nav navy');
-    navInner = createElement('div', 'navy');
+function createNavBar(project){
+    var navBar = createElement('div', 'nav primary card_out');
+    navInner = createElement('div', 'primary');
 
     navBar.appendChild(navInner);
+    let title =  createElement('h1', 'sub_page_header primary_text');
+    title.innerHTML = project.name;
+    title.setAttribute('style', 'text-align: center; float: left; padding: 10px;');
+    navInner.appendChild(title)
+    navBar.appendChild(createElement('div', 'clear'));
 
-    navInner.appendChild(createNavButton('Home', '../index.html#about'));
-    navInner.appendChild(createNavButton('Projects', '../index.html#projects'));
+    navItems.push(createNavButton('Home', '../index.html#about'));
+    navItems.push(createNavButton('Projects', '../index.html#projects'));
 
     return navBar;
 }
 function createNavButton(text, reference){
-    var element = createElement('a', 'navButton navy_hover no_underline smoothScroll');
+    var element = createElement('a', 'navButton primary_text hover no_underline smoothScroll');
     element.innerHTML = text;
     element.setAttribute('href', reference);
     return element;
 }
 function createSubPage(subpage){
-    if(subpage.type == "link"){
-        navInner.appendChild(createNavButton(subpage.header, subpage.value));
+    if(subpage.type === "link"){
+          navItems.push(createNavButton(subpage.header, subpage.value));
     }
     else{
-        var border = createElement('div', 'sub_border');
+        let cardStyle = subpage.type === 'video'?'card_in secondary':'card_out';
+        var border = createElement('div', cardStyle);
 
         var page = createElement('div', 'sub_page');
 
-        if(subpage.type == "text"){
+        if(subpage.type === "text"){
             createText(subpage, page);
         }
-        else if(subpage.type == "list"){
+        else if(subpage.type === "list"){
             createList(subpage, page);
         }
-        else if(subpage.type == "video"){
+        else if(subpage.type === "video"){
             createVideo(subpage, page);
         }
         if(subpage.backgroundURL){
@@ -70,16 +82,16 @@ function createSubPage(subpage){
 }
 
 function createHeader(title){
-    var element = createElement('h1', 'sub_page_header');
+    var element = createElement('h1', 'sub_page_header primary_text');
     element.innerHTML = title;
     return element;
 }
 
 function createText(subpage, page){
-    if(subpage.header){
+    if(subpage.header && subpage.header !== project.name){
         page.appendChild(createHeader(subpage.header));
     }
-    var para = createElement('p', 'para_A');
+    var para = createElement('p', 'para_A primary_text');
         var style = 'margin-right: 150px;'
     para.setAttribute('style', style);
     para.innerHTML = subpage.value;
@@ -88,11 +100,11 @@ function createText(subpage, page){
 function createList(subpage, page){
     if(subpage.header){
         page.appendChild(createHeader(subpage.header));
-            navInner.appendChild(createNavButton(subpage.header, '#' + subpage.header));
+          navItems.push(createNavButton(subpage.header, '#' + subpage.header));
         page.setAttribute('id', subpage.header);
     }
 
-    var para = createElement('p', 'para_A');
+    var para = createElement('p', 'para_A secondary card_out');
         var style = 'margin-right: 150px;'
     para.setAttribute('style', style);
     for(let i = 0; i < subpage.value.length; i++){
@@ -107,7 +119,7 @@ function createList(subpage, page){
 function createVideo(subpage, page){
     var element = createElement('iframe');
     if(subpage.header){
-        navInner.appendChild(createNavButton(subpage.header, '#' + subpage.header));
+        navItems.push(createNavButton(subpage.header, '#' + subpage.header));
         element.setAttribute('id', subpage.header);
     }
     element.setAttribute('type', 'text/html');

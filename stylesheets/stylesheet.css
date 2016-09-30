@@ -45,7 +45,8 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#ecf0f1;
-  background: #fefeff;
+  /*background: #fefeff;*/
+  background: #fff;
   /*font-family: 'Arial', sans-serif;*/
   font-family: 'Galdeano', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -102,35 +103,44 @@ footer {
 Full-Width Styles
 *******************************************************************************/
 .nav{
-position: fixed;
-top: 0px;
-width: 100vw;
-color: #fff;
-border-bottom:2px dashed #fff;
-    height: 35px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  color: #1C2B3A;
+  height: 60px;
 }
 
 .nav > div {
-    height: 35px;
-    min-width: 405px;
-    max-width: 1080px;
-    margin: auto;
+  height: 35px;
+  min-width: 405px;
+  max-width: 1080px;
+  margin: auto;
 }
 
 .navButton{
-  height: 35px;
-  padding: 5px;
+  height: 25px;
+  padding: 17.5px;
   margin: 0 2px 0 2px;
   font-size: 24px;
   text-decoration: none;
-  border-radius: 3px;
+  float:right;
+}
+.card_out{
+  -webkit-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+}
+.card_in{
+  -webkit-box-shadow: inset 0px 0px 50px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 50px -15px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 50px -15px rgba(0,0,0,0.75);
 }
 .sub_page{
   overflow: hidden;
   min-width: 405dp;
   max-width: 1080px;
   margin: 0px auto;
-  padding: 40px 0 40px 0;
+  padding: 65px 0 65px 0;
   background-repeat: no-repeat;
   background-size: 150px 150px;
   background-position: right bottom;
@@ -141,7 +151,6 @@ border-bottom:2px dashed #fff;
 }
 .sub_page_header{
   padding-left: 10px;
-  color: #000;
   margin-bottom: 20px;
 }
 .no_underline{
@@ -151,21 +160,23 @@ border-bottom:2px dashed #fff;
 .no_underline:hover, .no_underline:focus{
     text-decoration: none;
 }
+.fadient{
+  background: linear-gradient(to right, transparent, #fff, transparent);
+
+}
 
 #about{
   color: #000;
   background: #494C4E;
 }
 .para_A{
-  color: #34495E;
-  font-weight: 100;
+  color: #fff;
   font-size: 24px;
   text-align: center;
   margin-right: 0px;
-  padding: 0 10% 0 10%;
-  text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;
-  /*background: #f1c40f;*/
-  border-radius: 4px;
+  padding: 10px;
+  /*text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;*/
+  background: rgba(255, 255, 255, 0.5);
 }
 #avatar_img{
   float: left;
@@ -185,8 +196,8 @@ border-bottom:2px dashed #fff;
 
 .thirds {
     display: inline-table;
-	margin: .5%;
-    width: 30%;
+	margin: 1%;
+    width: 29%;
 	min-width: 300px;
     height: 175px;
 	font-size: 30px;
@@ -195,11 +206,12 @@ border-bottom:2px dashed #fff;
 	text-decoration: underline;
     text-align: center;
 	padding: 10px;
-	border: 1px dashed #fff;
-	border-radius: 4px;
 }
-.thirds:hover {text-decoration: none; box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);
-color: #000}
+.thirds:hover {
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);
+  background: #fff;
+  color: #1C2B3A}
 
 .clear{
 	clear: both;
@@ -234,7 +246,6 @@ color: #000}
 	width: 150px;
 	height: 150px;
 	min-width: 150px;
-	color #000;
 }
 #red{
 	color: #fff;
@@ -284,6 +295,28 @@ color: #000}
 	background: #f1c40f;
 	text-decoration: none;
 }
+.primary{
+  background: #fff;
+}
+.primary_text{
+	color: #1C2B3A;
+	text-decoration: none;
+}
+.secondary{
+  background: #1C2B3A;
+}
+.secondary_text{
+  color: #fff;
+	text-decoration: none;
+}
+.hover{
+	transition-duration: .5s;
+	text-decoration: none;
+}
+.hover:hover, .hover:focus{
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.6);
+}
+
 .navy{
 	background: #1C2B3A;
 	text-decoration: none;
@@ -340,14 +373,12 @@ color: #000}
   color: #fff;
 }
 .para_E{
-  color: #000;
-  background: #fff;
   font-weight: 100;
   text-align: left;
-  padding: 80px 0 80px 100px;
-  border-radius: 4px;
+  padding: 80px 80px 80px 100px;
 }
 .bullet{
+  font-size: 22px;
 	padding-left: 30px;
 }
 #contact{
@@ -364,10 +395,13 @@ color: #000}
 	text-decoration: none;
 	transition-duration: .5s;
     text-align: center;
-	border-radius: 6px;
-	border: 1px dashed #fff;
 }
-.quarters:hover {box-shadow: 0 10px 10px #111;}
+.quarters:hover {
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(17, 17, 17, 0.6);
+  background: #fff;
+  color: #1C2B3A
+}
 
 .contact_img{
   display: inline-table;
@@ -423,5 +457,8 @@ Small Device Styles
   max-height: 750px;
   margin: 0px auto;
   /*background: #373737;*/
+  }
+  .para_A{
+    font-size: 12px;
   }
 }
