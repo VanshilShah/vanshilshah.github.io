@@ -153,7 +153,7 @@
             }
         ]
     },
-    {
+    /*{
         "name" : "ImAgenda",
         "description" : "This app lets you take the picture of a printed schedule and converts it into events you can save in your phone.",
         "categories" : ["android", "featured"],
@@ -176,7 +176,7 @@
             }
         ]
 
-    },
+    },*/
     {
         "name" : "Nutty Ninjas",
         "description" : "For my 11th grade final project, I created a game that featured an advanced AI.",
