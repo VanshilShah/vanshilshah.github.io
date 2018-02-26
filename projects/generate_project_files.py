@@ -34,7 +34,7 @@ with open('projects.json') as json_data:
 
 	<body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="../javascripts/smoothscroll.js"></script>
+        <script src="javascripts/vanshil_site.js"></script>
         <script src="../javascripts/project_page.js"></script>
         <script type="text/javascript">
         generate(''' + str(i) + ''');

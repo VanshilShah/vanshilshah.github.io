@@ -45,7 +45,7 @@ function createNavBar(project){
     return navBar;
 }
 function createNavButton(text, reference){
-    var element = createElement('a', 'navButton primary_text hover no_underline smoothScroll');
+    var element = createElement('a', 'navButton primary_text hover no_underline smoothscroll');
     element.innerHTML = text;
     element.setAttribute('href', reference);
     return element;

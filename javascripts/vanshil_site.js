@@ -123,3 +123,13 @@ function createElement(elementType, elementClasses, elementID){
     }
     return element;
 }
+
+// Document ready shorthand statement
+   $(function() {
+     $('.smoothscroll').click(function() {
+       var id = $(this).attr('href');
+       $('html,body').animate({ scrollTop: $(id).offset().top }, 'slow');
+       // Prevent default behavior of link
+       return false;
+     });
+   });
