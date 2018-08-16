@@ -23,7 +23,6 @@
             }
         ]
     },
-
     {
         "name" : "Blizzard XIV",
         "description" : "Annual FRC Robot created by a highschool robotics team that I mentor.",
@@ -153,7 +152,24 @@
             }
         ]
     },
-  
+    {
+        "name" : "ImAgenda",
+        "description" : "This app lets you take the picture of a printed schedule and converts it into events you can save in your phone.",
+        "categories" : ["android", "featured"],
+        "subpages" : [
+            {
+                "type" : "text",
+                "header" : "ImAgenda",
+                "backgroundURL" : "images/imagenda_logo.png",
+                "value" : "I created this app with a team of two other students while I was at PennApps Hackathon. I did most of the android work on the app as well as coming up with the hueristics for a simple algorithm that corrected typos from the OCR and parsed the information into multiple events(as opposed to the one string that we received from our OCR.) I also designed the UI and the Logo."
+            },
+            {
+                "type" : "video",
+                "header" : "Demo",
+                "value" : "https://drive.google.com/file/d/1aMfhCR6WWzcbkTWuNrRy2dqlfHt-lflK/preview"
+            }
+        ]
+    },
     {
         "name" : "Nutty Ninjas",
         "description" : "For my 11th grade final project, I created a game that featured an advanced AI.",
