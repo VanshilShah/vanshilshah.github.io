@@ -161,7 +161,7 @@
                 "type" : "text",
                 "header" : "ImAgenda",
                 "backgroundURL" : "images/imagenda_logo.png",
-                "value" : "I created this app with a team of two other students while I was at PennApps Hackathon. I did most of the android work on the app as well as coming up with the hueristics for a simple algorithm that corrected typos from the OCR and parsed the information into multiple events(as opposed to the one string that we received from our OCR.) I also designed the UI and the Logo."
+                "value" : "I created this app as a group project for a course in software engineering. I set up the infrastructure of the Android app, wrote all of the OpenCv code (grid detection+ ocr) and uses threads to run the processing in the background while giving visual updates to the UI."
             },
             {
                 "type" : "video",
