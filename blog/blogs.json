@@ -12,10 +12,9 @@
     "blogs" : [
     {
         "name" : "How I landed jobs at Google, Facebook and Uber: Advice to students in software",
+        "image": "images/ask.png",
         "date" : "May 27th, 2019",
 		"sections" : [
-            {"type" : "banner", "value" : "https://cdn.pixabay.com/photo/2017/05/24/22/57/ask-2341784_960_720.jpg"},
-            {"type" : "title", "value" : "How I landed jobs at Google, Facebook and Uber: Advice to students in software"},
             {"type" : "text", "value" : "I often get questions from younger students (usually still in high school) about steps I took to land competitive internships and a full-time job at Google. Firstly, I applaud any student who takes the time to look ahead, and takes the initiative to reach out. These are my three pieces of advice to incoming university first years in software:"},
             {"type" : "header", "value" : "1. Get work experience early."},
             {"type" : "text", "value" : "This means get started <b>today</b> on finding a summer job after first year, and try to get a part-time job during the school year. I worked part-time during first year for 10 hours a week doing Android development and while it is not necessary, getting experience early sets you up to dominate the job market later on. Working part-time can also be a great way to get your foot in the door, in my case, I was able to work at the same company after first year for a summer internship. For the bigger companies, your chances of getting in after 1st year are low, and only possible after 2nd year if you have work experience. Landing an interview as a 3rd year student is the most likely as companies are looking to convert summer interns into full-time new-grad employees. Until then, aim to get early experience in your reach, and build up your skills so you can ace the interview when the opportunity comes. The latter is an art form of its own and worthy of another post about my learnings in this matter."},
