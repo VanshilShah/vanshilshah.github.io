@@ -1,17 +1,4 @@
-import json
-from pprint import pprint
-
-with open('projects.json') as json_data:
-    projects = json.load(json_data)
-    json_data.close()
-    #pprint(d)
-    projects_list = projects['projects']
-    for i in range(len(projects_list)):
-    	project = projects_list[i]
-    	space_name = project['name']
-    	name = space_name.replace(' ', '_').lower()
-    	project_file = open(name + '.html', 'w')
-    	project_file.write('''<!DOCTYPE html>
+<!DOCTYPE html>
 <html
 	<head>
     <script>
@@ -26,19 +13,20 @@ with open('projects.json') as json_data:
     </script>
 	<link href="https://fonts.googleapis.com/css?family=Calibri|Source+Serif+Pro" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
-	<title>Vanshil - ''' + space_name + '''</title>
+	<title>Vanshil</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
 
 
 	</head>
 
 	<body>
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="javascripts/vanshil_site.js"></script>
-        <script src="../javascripts/project_page.js"></script>
+        <script src="../javascripts/vanshil_site.js"></script>
+        <script src="../javascripts/blog_page.js"></script>
         <script type="text/javascript">
-        generate(''' + str(i) + ''');
+        generate(0);
         </script>
 	</body>
 
-</html>''')
+</html>

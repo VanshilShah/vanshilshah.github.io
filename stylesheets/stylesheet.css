@@ -167,8 +167,15 @@ Full-Width Styles
 
 #about{
   color: #000;
-  background: #494C4E;
+  background-color: #494C4E;
 }
+
+.banner{
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .para_A{
   color: #fff;
   font-size: 24px;
@@ -178,6 +185,16 @@ Full-Width Styles
   /*text-shadow: .3px 0 0 #fff, -.3px 0 0 #fff, 0 .3px 0 #fff, 0 -.3px 0 #fff;*/
   background: rgba(255, 255, 255, 0.5);
 }
+
+.para_B{
+  font-family: 'Source Serif Pro', serif;
+  text-align: left; 
+  font-size: 19px;
+  padding: 10px;
+  color: #494C4E;
+  line-height: 1.75em;
+}
+
 #avatar_img{
   float: left;
   max-width: 150px;
