@@ -425,6 +425,25 @@ Full-Width Styles
   max-width: 30px;
 }
 
+.blog_button{
+  display: block;
+  margin: 0px auto;
+  width: 650px;
+  height: 300px;
+  margin-bottom: 45px;
+  padding: 0px;
+  color: white;
+}
+.blog_button:hover, .blog_button:focus {
+  text-decoration: underline;
+}
+.blog_button_text{
+  padding: 10px;
+  background-color: #1C2B3A;
+  color: #fff;
+  text-align: left;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/

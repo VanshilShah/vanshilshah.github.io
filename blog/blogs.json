@@ -1,28 +1,40 @@
-{
+{   
     "page" : {
-        "title" : "Vanshil's Blog",
+        "title" : "Vanshil Shah",
         "links" : 
         [  
             {
                 "title": "About me",
                 "value": "../index.html"
+            },
+            {
+                "title": "Blogs",
+                "value": "./all.html"
             }
         ]
     },
     "blogs" : [
     {
+        "name" : "all",
+        "image": "images/peru.jpg",
+        "date" : "",
+        "sections" : [
+            {"type" : "text", "value" : "Hi, my name is Vanshil, I am an incoming Software Engineer at Google and a recent graduate from University of Toronto. I have started these blogs as a medium to share career advice and travel guides. Check out my most recent blog post!"}
+        ]
+    },
+    {
         "name" : "How I landed jobs at Google, Facebook and Uber: Advice to students in software",
         "image": "images/ask.png",
-        "date" : "May 27th, 2019",
+        "date" : "May 28th, 2019",
 		"sections" : [
-            {"type" : "text", "value" : "I often get questions from younger students (usually still in high school) about steps I took to land competitive internships and a full-time job at Google. Firstly, I applaud any student who takes the time to look ahead, and takes the initiative to reach out. These are my three pieces of advice to incoming university first years in software:"},
+            {"type" : "text", "value" : "I often get questions from younger students, about steps I took to land high-profile, competitive internships, and a full-time job at Google. Firstly, I applaud any student who takes the time to look ahead, and takes the initiative to reach out. These are my three pieces of advice to incoming university first years in software:"},
             {"type" : "header", "value" : "1. Get work experience early."},
             {"type" : "text", "value" : "This means get started <b>today</b> on finding a summer job after first year, and try to get a part-time job during the school year. I worked part-time during first year for 10 hours a week doing Android development and while it is not necessary, getting experience early sets you up to dominate the job market later on. Working part-time can also be a great way to get your foot in the door, in my case, I was able to work at the same company after first year for a summer internship. For the bigger companies, your chances of getting in after 1st year are low, and only possible after 2nd year if you have work experience. Landing an interview as a 3rd year student is the most likely as companies are looking to convert summer interns into full-time new-grad employees. Until then, aim to get early experience in your reach, and build up your skills so you can ace the interview when the opportunity comes. The latter is an art form of its own and worthy of another post about my learnings in this matter."},
             {"type" : "header", "value" : "2. Build projects on the side and follow your heart."},
             {"type" : "text", "value" : "Side projects look good on resumes, but they are also valuable because you build skills you do not learn in school. I have been working on side projects since high school and can not credit them enough. Not many people look at them this way but in my opinion they serve as opportunities to talk about your learnings with fellow programmers. To share a quick anecdotal example of this, I met the person who got me an interview at Uber when he looked to my screen and asked me about what I was working on. A good side project to get started with is building a personal website: you can build basic skills, learn to debug, and have a digital business card you can direct people towards to learn more about you. I have been working on vanshil.com since 12th grade and iterating it over the years. It has become a part of me and rather than needing to bring it up near the end of a conversation, it now precedes me such that I often meet people who have seen my website before even meeting me."},
             {"type" : "text", "value" : "The <i>follow your heart</i> part of this point is to tell you it is ok to work on side projects instead of school work. When you get started in university, it is easy to become overwhelmed with the change and chase grades as you did in high school. While good grades can <i>potentially</i> help you secure an interview, average grades will not drag you down if you have built an impressive resume outside of school. The only exceptions to this are work opportunities that come from a school related career portal. However, if you are in software you will quickly learn that there are more (and probably better) opportunities outside of this gated community. My final GPA was still above a 3.0 and this is not an excuse to fail school, but only to help you realize the lack of impact it has on your career. I have only been asked about it <b>once at a career fair</b> in my four years of going to career fairs and submitting job applications. Keep in mind however, if you are interested in any type of higher education beyond an undergrad, your GPA does matter and there is nothing wrong with making that a priority."},
             {"type" : "header", "value" : "3. Seek help."},
-            {"type" : "text", "value" : "Reach out to upper years and those who inspire you. The other two points in this post are advice commonly found online, but I see a minority of younger students following this last point. In my opinion it is probably the most important. My career path would likely not be the same if I had not made an impression on upper years I met at hackathons or personally reached out to. They were the ones who referred me to big companies, answered all of my questions, vetted my resumes, and helped me prep for the interviews. Having heard many other people's stories, I now know that almost nobody makes it on their own. You need to be giving your 100% <b>and</b> be seeking help from those above you. I have never been turned down from asking for advice and have always left such encounters with more knowledge. On the flip side, everyone loves sharing advice and I have never felt it a chore to help those who reach out. When approached the right way and with respect for the other individual’s time, you have nothing to lose and everything to gain by seeking guidance. You will meet a lot of new people in the next few months so take the time to ask yourself, \"What can I learn from this individual?\" Over time you will have amassed enough knowledge that you will be paying it forward to the generation that follows you."}
+            {"type" : "text", "value" : "Reach out to upper years and those who inspire you. The other two points in this post are advice commonly found online, but I see a minority of younger students following this last point. In my opinion it is probably the most important. My career path would not be the same if I had not made an impression on upper years I met at hackathons or personally reached out to. They were the ones who referred me to big companies, answered all of my questions, vetted my resumes, and helped me prep for the interviews. Having heard many other people's stories, I now know that almost nobody makes it on their own. You need to be giving your 100% <b>and</b> seek help from those above you. I have never been turned down from asking for advice and have always left these encounters with more knowledge. On the flip side, everyone loves sharing advice and I have never felt it a chore to help those who reach out. When approached the right way and with respect for the other individual’s time, you have nothing to lose and everything to gain by seeking guidance. You will meet a lot of new people in the next few months so take the time to ask yourself, \"What can I learn from this individual?\" Over time you will amass enough knowledge that you can pay it forward to the generation that follows you."}
             
         ]
     }

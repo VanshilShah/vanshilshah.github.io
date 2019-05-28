@@ -18,11 +18,21 @@ function readFile(index){
         body.append(createNavBar());
         var subpage = createElement('div', 'sub_page');
         subpage.appendChild(createSection({'type': 'banner', 'value': blog.image}));
-        subpage.appendChild(createSection({'type': 'title', 'value': blog.name}));
+        if (blog.name !== 'all') {
+            subpage.appendChild(createSection({'type': 'title', 'value': blog.name}));
+            subpage.appendChild(createSection({'type': 'text', 'value': blog.date}));
+        }
         for(var i in blog.sections){
             var section = blog.sections[i];
             subpage.appendChild(createSection(section));
         }
+        if (blog.name === 'all') {
+            for(let i = 1; i < all_blogs.blogs.length; i++){
+                var blog_post = all_blogs.blogs[i];
+                subpage.appendChild(createBlogButton(blog_post));
+            }
+        }
+
         body.append(subpage);
         appendNavItems();
     });
@@ -47,10 +57,11 @@ function createNavBar(){
 
     for(var i in all_blogs.page.links){
         let link = all_blogs.page.links[i];
-        navItems.push(createNavButton(link.title, link.value));
+        if (!(blog.name == 'all' && link.title === 'Blogs')) {
+            navItems.push(createNavButton(link.title, link.value));
+        }
       }
     navItems.push(createShareButton());
-    // navItems.push(createNavButton('Projects', '../index.html#projects'));
 
     return navBar;
 }
@@ -110,4 +121,17 @@ function appendText(section, value){
         para.innerHTML = value;
         section.appendChild(para);
     }
+}
+
+function createBlogButton(blog_post) {
+    var element = createElement('button', 'banner secondary-text blog_button hover');
+    var style = ('background-image: url(' + blog_post.image + ');');
+    element.setAttribute('style', style);
+    var buttonText = createElement('h1', 'blog_button_text');
+    buttonText.innerHTML = blog_post.name;
+    element.appendChild(buttonText);
+    element.onclick= function(event) {
+        window.location.href = './' + blog_post.name.replace(/ /g, '_') + '.html';
+    }
+    return element;
 }

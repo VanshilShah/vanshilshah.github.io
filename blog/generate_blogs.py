@@ -6,12 +6,14 @@ with open('blogs.json') as json_data:
     json_data.close()
     #pprint(d)
     blogs_list = blogs['blogs']
+
     for i in range(len(blogs_list)):
     	blog = blogs_list[i]
-    	space_name = blog['name']
-    	name = space_name.replace(' ', '_').lower()
-    	blog_file = open(name + '.html', 'w')
-    	blog_file.write('''<!DOCTYPE html>
+        if blog['name'] != 'all':
+    	    space_name = blog['name']
+    	    name = space_name.replace(' ', '_').lower()
+    	    blog_file = open(name + '.html', 'w')
+    	    blog_file.write('''<!DOCTYPE html>
 <html
 	<head>
     <meta property='og:title' content="''' + blog['name'] + '''"/>
@@ -31,7 +33,7 @@ with open('blogs.json') as json_data:
     </script>
 	<link href="https://fonts.googleapis.com/css?family=Calibri|Source+Serif+Pro" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
-	<title>Vanshil</title>
+	<title>''' + blog['name'] + '''</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
 
 
