@@ -131,7 +131,7 @@ function createBlogButton(blog_post) {
     buttonText.innerHTML = blog_post.name;
     element.appendChild(buttonText);
     element.onclick= function(event) {
-        window.location.href = './' + blog_post.name.replace(/ /g, '_') + '.html';
+        window.location.href = './' + blog_post.name.toLowerCase().replace(/ /g, '_') + '.html';
     }
     return element;
 }
