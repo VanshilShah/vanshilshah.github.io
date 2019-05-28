@@ -12,11 +12,13 @@ function generate(index){
 
 function readFile(index){
     "use strict";
-    jQuery.getJSON('../blog/blog.json', function(result) {
+    jQuery.getJSON('../blog/blogs.json', function(result) {
         all_blogs = result;
         blog = all_blogs.blogs[index];
         body.append(createNavBar());
         var subpage = createElement('div', 'sub_page');
+        subpage.appendChild(createSection({'type': 'banner', 'value': blog.image}));
+        subpage.appendChild(createSection({'type': 'title', 'value': blog.name}));
         for(var i in blog.sections){
             var section = blog.sections[i];
             subpage.appendChild(createSection(section));
