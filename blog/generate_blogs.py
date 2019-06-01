@@ -18,7 +18,6 @@ with open('blogs.json') as json_data:
 	<head>
     <meta property='og:title' content="''' + blog['name'] + '''"/>
     <meta property='og:image' content="https://vanshil.com/blog/''' + blog['image'] + '''"/>
-    <meta property='og:description' content="''' + blog['sections'][0]['value'] + '''/>
     <meta property='og:url' content="https://vanshil.com/blog/''' + space_name + '''.html"/>
 
     <script>
