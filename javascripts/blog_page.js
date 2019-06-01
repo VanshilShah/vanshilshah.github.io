@@ -32,7 +32,7 @@ function readFile(index){
                 subpage.appendChild(createBlogButton(blog_post));
             }
         }
-
+        subpage.setAttribute('style', 'padding-top: 0px;');
         body.append(subpage);
         appendNavItems();
     });
@@ -110,7 +110,7 @@ function appendHeader(section, value, size){
 
 function appendBanner(section, value){
     var element = createElement('div', 'banner sub_page_header primary_text');
-    var style = ('background-image: url(' + value + '); min-height: 450px; margin-bottom: 45px;');
+    var style = ('background-image: url(' + value + '); min-height: 500px; margin-bottom: 45px;');
     element.setAttribute('style', style);
     section.appendChild(element);
 }
