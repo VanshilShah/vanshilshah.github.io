@@ -25,7 +25,7 @@
     {
         "name": "Coding Interviews Unravelled",
         "image": "images/interview.jpg",
-        "date": "December 8th, 2019",
+        "date": "December 10th, 2019",
         "sections": [
             {"type" : "text", "value" : "When people reach out to me, the message I get most often is:"},
             {"type" : "text", "value" : "<b><i>\"Hey, I have an interview with XYZ Company next week, any advice for coding interviews?\"</i></b>"},
