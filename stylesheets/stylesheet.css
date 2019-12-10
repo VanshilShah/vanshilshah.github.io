@@ -186,13 +186,16 @@ Full-Width Styles
   background: rgba(255, 255, 255, 0.5);
 }
 
-.para_B{
+.para_blog{
   font-family: 'Source Serif Pro', serif;
   text-align: left; 
   font-size: 19px;
   padding: 10px;
   color: #494C4E;
   line-height: 1.75em;
+}
+.para_blog a{
+  color: rgb(8, 132, 255);
 }
 
 #avatar_img{

@@ -91,19 +91,27 @@ function createSection(section){
         element.setAttribute('style', elementStyle);
     }
     else if(section.type === "header"){
-        appendHeader(element, section.value, 'h4');
+        appendHeader(element, section.value, 'h3');
         element.setAttribute('style', elementStyle);
+    }
+    else if(section.type === "header2"){
+        appendHeader(element, section.value, 'h4', weight='light');
+        element.setAttribute('style', elementStyle, '100');
     }
     else if(section.type === "text"){
         appendText(element, section.value);
         element.setAttribute('style', elementStyle);
     }
+    else if(section.type === "text-list"){
+        appendTextList(element, section.value);
+        element.setAttribute('style', elementStyle);
+    }
     return element;
 }
 
-function appendHeader(section, value, size){
+function appendHeader(section, value, size, weight='bold'){
     var element = createElement(size, 'primary_text');
-    element.setAttribute('style', 'font-weight: bold;');
+    element.setAttribute('style', 'font-weight:' + weight + ';');
     element.innerHTML = value;
     section.appendChild(element);
 }
@@ -115,10 +123,22 @@ function appendBanner(section, value){
     section.appendChild(element);
 }
 
-function appendText(section, value){
+function appendText(section, value, children){
     if (value && value.length > 0){
-        var para = createElement('p', 'para_B');
+        var para = createElement('p', 'para_blog');
         para.innerHTML = value;
+        section.appendChild(para);
+    }
+}
+function appendTextList(section, children){
+    if (children && children.length > 0){
+        var para = createElement('p', 'para_blog');
+        for(i in children){
+            var child = createElement('p');
+            child.setAttribute('style', 'padding-left: 20px;');
+            child.innerHTML = children[i];
+            para.appendChild(child);
+        }
         section.appendChild(para);
     }
 }
@@ -129,6 +149,9 @@ function createBlogButton(blog_post) {
     element.setAttribute('style', style);
     var buttonText = createElement('h1', 'blog_button_text');
     buttonText.innerHTML = blog_post.name;
+    var buttonDate = createElement('h6', 'blog_button_text');
+    buttonDate.innerHTML = blog_post.date;
+    buttonText.appendChild(buttonDate);
     element.appendChild(buttonText);
     element.onclick= function(event) {
         window.location.href = './' + blog_post.name.toLowerCase().replace(/ /g, '_') + '.html';
