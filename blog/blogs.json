@@ -16,7 +16,7 @@
     "blogs" : [
     {
         "name" : "all",
-        "image": "images/peru.jpg",
+        "image": "images/costa_rica.jpg",
         "date" : "",
         "sections" : [
             {"type" : "text", "value" : "Hi, my name is Vanshil, I'm a Software Engineer at Google and a recent graduate from University of Toronto. I've started these blogs as a medium to share career advice and travel guides. Check out my most recent blog post!"}
