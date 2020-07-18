@@ -110,14 +110,14 @@ function createSection(section){
 }
 
 function appendHeader(section, value, size, weight='bold'){
-    var element = createElement(size, 'primary_text');
+    var element = createElement(size, 'secondary_text');
     element.setAttribute('style', 'font-weight:' + weight + ';');
     element.innerHTML = value;
     section.appendChild(element);
 }
 
 function appendBanner(section, value){
-    var element = createElement('div', 'banner sub_page_header primary_text');
+    var element = createElement('div', 'banner sub_page_header secondary_text');
     var style = ('background-image: url(' + value + '); min-height: 500px; margin-bottom: 45px;');
     element.setAttribute('style', style);
     section.appendChild(element);

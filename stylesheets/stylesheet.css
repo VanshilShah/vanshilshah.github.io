@@ -107,21 +107,23 @@ Full-Width Styles
   top: 0px;
   width: 100vw;
   color: #1C2B3A;
-  height: 60px;
+  height: 40px;
 }
-
+.nav > div > h1 {
+  font-size: 20px;
+}
 .nav > div {
-  height: 35px;
+  height: 20px;
   min-width: 405px;
   max-width: 1080px;
   margin: auto;
 }
 
 .navButton{
-  height: 25px;
-  padding: 17.5px;
+  height: 20px;
+  padding: 10px;
   margin: 0 2px 0 2px;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   float:right;
 }
@@ -140,7 +142,7 @@ Full-Width Styles
   min-width: 405dp;
   max-width: 1080px;
   margin: 0px auto;
-  padding: 65px 0 65px 0;
+  padding: 45px 0 45px 0;
   background-repeat: no-repeat;
   background-size: 150px 150px;
   background-position: right bottom;
@@ -315,9 +317,14 @@ Full-Width Styles
 	background: #f1c40f;
 	text-decoration: none;
 }
-.primary{
+/* .primary{
   background: #fff;
 }
+
+.primary_transparent{
+  background: #ffffffe1;
+}
+
 .primary_text{
 	color: #1C2B3A;
 	text-decoration: none;
@@ -328,7 +335,28 @@ Full-Width Styles
 .secondary_text{
   color: #fff;
 	text-decoration: none;
+} */
+
+.primary{
+  background: #1C2B3A;
 }
+
+.primary_transparent{
+  background: #1C2B3Ae1;
+}
+
+.primary_text{
+	color: #fff;
+	text-decoration: none;
+}
+.secondary{
+  background: #ffffffe1;
+}
+.secondary_text{
+  color: #1C2B3A;
+	text-decoration: none;
+}
+
 .hover{
 	transition-duration: .5s;
 	text-decoration: none;
@@ -395,7 +423,7 @@ Full-Width Styles
 .para_E{
   font-weight: 100;
   text-align: left;
-  padding: 80px 80px 80px 100px;
+  padding: 40px 40px 40px 40px;
 }
 .bullet{
   font-size: 22px;

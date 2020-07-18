@@ -65,7 +65,7 @@ function loadProjects(){
 }
 
 function createProjectButton(title, text, reference){
-    var button = createElement('a', 'thirds hover secondary secondary_text');
+    var button = createElement('a', 'thirds hover primary_transparent primary_text');
     button.innerHTML = title;
     if(text){
         var description = createElement('h6', 'description');
@@ -77,7 +77,7 @@ function createProjectButton(title, text, reference){
 }
 
 function setUpAllButton(){
-    var all = createElement('a', 'quarters hover secondary secondary_text no_underline');
+    var all = createElement('a', 'quarters hover primary_transparent primary_text no_underline');
     all.innerHTML = "See All (" + length + ")";
     all.setAttribute('id', '#all_projects');
     all.setAttribute('href', '#projects');
@@ -100,7 +100,7 @@ function allClick(){
 }
 
 function createHeader(title){
-    var element = createElement('h1', 'sub_page_header primary_text');
+    var element = createElement('h1', 'sub_page_header secondary_text');
     element.innerHTML = title;
     return element;
 }
