@@ -45,8 +45,8 @@ function appendNavItems(){
 }
 
 function createNavBar(){
-    var navBar = createElement('div', 'nav primary card_out');
-    navInner = createElement('div', 'primary');
+    var navBar = createElement('div', 'nav primary_transparent card_out');
+    navInner = createElement('div');
 
     navBar.appendChild(navInner);
     let title =  createElement('h1', 'sub_page_header primary_text');
