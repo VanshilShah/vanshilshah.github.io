@@ -12,7 +12,7 @@ function generate(index){
 
 function readFile(index){
     "use strict";
-    jQuery.getJSON('../blog/blogs.json', function(result) {
+    jQuery.getJSON('/blog/blogs.json', function(result) {
         all_blogs = result;
         blog = all_blogs.blogs[index];
         body.append(createNavBar());

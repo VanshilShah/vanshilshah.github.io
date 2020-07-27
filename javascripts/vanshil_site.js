@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 function loadProjects(){
-   jQuery.getJSON('projects/projects.json', function(data) {
+   jQuery.getJSON('/projects/projects.json', function(data) {
        projects_featured = createElement('div');
        projects_all = createElement('div');
 
