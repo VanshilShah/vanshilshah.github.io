@@ -23,6 +23,66 @@
         ]
     },
     {
+        "name" : "Nobody is reading your resume, here is why",
+        "image" : "images/resume.jpg",
+        "date" : "May 8th, 2021",
+        "sections" : [
+            {"type" : "text", "value" : "Every now and then I review resumes for students, or friends who reach out to me. Usually, this takes me a lot of time because I like to focus on the details and point out every area of improvement I see. Conversely, recruiters will spend mere seconds looking at your resume. Your resume is an extreme elevator pitch meant to sell yourself to employers. Even in 2021, resume's are the most common medium for demonstrating work experience. A good resume can open career opportunities. If you have content on your resume that you haven't updated in years, this is your sign to refresh your resume."},
+            {"type" : "header", "value" : "What you need to understand."},
+            {"type" : "text", "value" : "<strong>Content is key.</strong> When I say you need to refresh your resume, I'm not referring to the visual appeal. Yes, the aesthetic is important, but the visual aspect will almost never be the reason you get hired. It isn't the reason nobody's reading your resume."},
+            {"type" : "text-list", "value": [
+                "Nobody's reading your resume because it's boring.&nbsp;",
+                "Nobody's reading your resume because they don't know what to read first.&nbsp;",
+                "Nobody's reading your resume because it's too complicated.&nbsp;"
+                ]},
+            {"type" : "header", "value" : "Stop sounding fancy"},
+            {"type" : "text", "value" : "The purpose of your resume is to convey information about you. Trying to sound fancy just gets in the way."},
+            {"type" : "text", "value" : "In the modern world, your resume targets two audiences. Humans and computers. Each one, extracts different information from your resume. Aim to <strong>maximize comprehension</strong> for both."},
+            {"type" : "header2", "value" : "Humans"},
+            {"type" : "text", "value" : "To a recruiter, the content on your resume, is going to make or break their impression of you. If you take away one thing from this blog post.<strong> Communication skills are the most important skills in any professional position</strong>. I have one <strong>golden rule</strong> for every line on my resume."},
+            {"type" : "text", "value" : "<strong>If a recruiter only reads this one sentence on my resume:</strong>"},
+            {"type" : "text-list", "value": [
+                    "<strong>1. Will they understand it?</strong>",
+                    "If a sentence is too long, or too complicated. Its useless.&nbsp;",
+                    "<strong>2. Will they extract a positive impression of me?</strong>",
+                    "It's not good enough to have content that leaves a neutral impression."
+                ]},
+            {"type" : "text", "value" : "So how do you make sure every sentence passes this test?"},
+            {"type" : "text", "value" : "Well there's no one-size-fits-all answer for the <strong>right</strong> way to do this. But there are definitely mistakes that are the <strong>wrong</strong> way to word content on your resume."},
+            {"type" : "text", "value" : "<strong>Multiple clauses in the same sentence</strong>. You want simple sentences. Simple sentences are understandable. Sentences that go on forever end up getting re-read. Time spent re-reading the same sentence is time taken away from reading the rest of your resume. My rule of thumb here is try and stick to one line for each bullet point."},
+            {"type" : "text", "value" : "<strong>Complicated words</strong>. I've done it too, I've added complicated words to a simple point to make it sound more fancy. I see this often in students' resumes because its the same trick most students use on essays to meet word counts. &nbsp;The reason this is a losing strategy on your resume is because it distracts from the key information. The real world values direct and simple communication. Salespeople don't wear snobby outfits and try to convince you they're better than you. They get to your level and try to give you as much information as they can. The goal is to maximize throughput of information and minimize resistance in comprehension. Large fancy words, interfere with comprehension."},
+            {"type" : "header2", "value" : "Computers"},
+            {"type" : "text", "value" : "If you're applying online, many companies will process your resume using an AI. In most cases, the AI is scanning for key-words to discern how well you match the job posting. Key-words or buzz-words, are words that are relevant to your field. It might be names of coding languages, computer software and tools or even rival companies' names. You can bet that Pepsi is looking for applicants with <i>\"Coca-Cola\"</i> on their resume."},
+            {"type" : "text", "value" : "To perform well here, you want to include as many key words in your resume without being repetitive. Its unlikely the AI is counting how many times a keyword shows up, so don't overdo it. You can also use online tools to see how well your resume matches a specific job posting."},
+            {"type" : "text", "value" : "Additionally, in order for a computer to parse your resume, the text needs to be in a parseable format. Weird formatting or special symbols can cause difficulties here. You can check this simply by highlighting the text in the PDF and pasting it into a new document. Unless asked for a specific format, use PDFs. Its 2021, people open resumes on phones, iPads, Macs, PCs, maybe even their smartwatch. PDFs are the standard."},
+            {"type" : "header", "value" : "Focus on relevant information"},
+            {"type" : "text", "value" : "Your resume is a demonstration of your communication skills. &nbsp;Very often I see resumes that are two pages long, or have information crammed up the margins of the page. This pattern just shows the reader:"},
+            {"type" : "text-list", "value" : [
+                "1. You're too lazy to focus your resume to the specific role.",
+                "2. You lack the ability to highlight relevant information."
+                ]},
+            {"type" : "text", "value" : "Remember, it's on <strong>you</strong> to convince the recruiter you're suitable for the job. It's not their responsibility to find the relevant parts. Going back to the golden rule. Every line on your resume should highlight your qualities and experience. You only have a few shots at making an impression to the reader."},
+            {"type" : "header", "value" : "Presentation Order"},
+            {"type" : "text", "value" : "Another common criticism I have with resumes is the presentation-order for information. The information at the top of your resume should be more important than that below it. The ideal order of information depends on your level of experience, personal strengths, and the position you're applying for. The best I can do is give some guidance based on career progression."},
+            {"type" : "header2", "value" : "Highschool student/graduate"},
+            {"type" : "text", "value" : "At this level, your extracurricular experience is probably your biggest strength. I'd focus on the clubs or volunteer roles most relevant to the job posting. If you have any relevant awards, or achievements I would highlight those as well. Perhaps you held a summer job in retail, or as a camp counsellor. Although valuable, experience like this isn't usually relevant to skilled jobs. I would say, keep this on your resume, but don't lead with it, <strong>unless </strong>you're applying to a similar role."},
+            {"type" : "header2", "value" : "University Student"},
+            {"type" : "text", "value" : "You're at the very beginning of your career. As you progress through school you're gaining an education relevant to your field.&nbsp;"},
+            {"type" : "text", "value" : "I often see university students dump their course codes and names onto their resumes. Brilliant right? What a concise way to communicate how smart you are! Honestly, the only value to putting your courses on your resume is being able to include buzz words. Putting course codes on your resume isn't impressive, everyone is doing it, and its very boring to read.&nbsp;"},
+            {"type" : "text", "value" : "Instead, apply your favourite learnings into side projects. Then, write about those projects on your resume. This is a recipe for success because not only are you reinforcing your learning. You're actually demonstrating a very important quality. <strong>Passion</strong>. Take a good look at the peers in your program who're getting hired by the best companies. I can almost guarantee they all demonstrate passion for their careers."},
+            {"type" : "header2", "value" : "Working Professional"},
+            {"type" : "text", "value" : "This one is pretty simple, focus on your work experience. Assuming you're applying to similar roles, your work experience should speak for itself. The key word here is <strong>focus,</strong> which means, remove focus from irrelevant information. One trick I use, is to play around with font sizes, bolding, and placement of text. Move things around so that the first word someone would read on your resume is the most important.&nbsp;"},
+            {"type" : "header", "value" : "The Truth"},
+            {"type" : "text", "value" : "When it comes to highly sought-after jobs at large companies. Wether you're in finance, tech, or any industry. <strong>The most impactful word on your resume will be the name of a competitor under your work experience.</strong>&nbsp;"},
+            {"type" : "text", "value" : "Let's say you've achieved this major milestone in your career but you're looking for a switch. At this point, is there any value, in perfecting your resume?&nbsp;"},
+            {"type" : "text", "value" : "From a <em>\"getting an interview\"</em> perspective, probably not.&nbsp;"},
+            {"type" : "text", "value" : "But your resume is actually passed around a lot more than you think. It's used when they make a hire/no hire decision. It's used to assess the type of compensation they'll offer you. It's even used to decide which sort of team you might join. So even though you no longer need a stellar resume to land an interview. A well-written resume can still provide tons of value throughout the hiring process.&nbsp;"},
+            {"type" : "header", "value" : "What are you waiting for?"},
+            {"type" : "text", "value" : "There's no perfect way to write a resume. In fact, a lot of my personal preferences bias this very blog post. But there's definitely one truth when it comes to resumes. As you progress throughout your career, you resume needs to adapt. The focus needs to shift. The irrelevant information needs to go<strong>. </strong>It needs to be readable! Writing a good resume is as important as the efforts you make afterwards. What's the point of applying to 100 jobs with a resume you spent 30 minutes writing? Or even worse, a resume you wrote 3 years ago?&nbsp;"},
+            {"type" : "text", "value" : "Writing a resume isn't a one time thing, it'll always take attention and improvement over time. So get started today, but also don't forget to keep improving!"}
+        ]
+    },
+    {
         "name" : "How to ace an internship: Habits of successful interns",
         "image": "images/success.jpg",
         "date" : "July 26th, 2020",
