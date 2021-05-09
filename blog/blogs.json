@@ -43,7 +43,7 @@
             {"type" : "text", "value" : "<strong>If a recruiter only reads this one sentence on my resume:</strong>"},
             {"type" : "text-list", "value": [
                     "<strong>1. Will they understand it?</strong>",
-                    "If a sentence is too long, or too complicated. Its useless.&nbsp;",
+                    "If a sentence is too long, or too complicated, it's useless.&nbsp;",
                     "<strong>2. Will they extract a positive impression of me?</strong>",
                     "It's not good enough to have content that leaves a neutral impression."
                 ]},
