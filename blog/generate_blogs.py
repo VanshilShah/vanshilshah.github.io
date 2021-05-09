@@ -18,7 +18,7 @@ with open('blogs.json') as json_data:
 	<head>
     <meta property='og:title' content="''' + blog['name'] + '''"/>
     <meta property='og:image' content="https://vanshil.com/blog/''' + blog['image'] + '''"/>
-    <meta property='og:url' content="https://vanshil.com/blog/''' + space_name + '''.html"/>
+    <meta property='og:url' content="https://vanshil.com/blog/''' + name + '''.html"/>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
