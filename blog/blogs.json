@@ -39,7 +39,7 @@
             {"type" : "text", "value" : "The purpose of your resume is to convey information about you. Trying to sound fancy just gets in the way."},
             {"type" : "text", "value" : "In the modern world, your resume targets two audiences. Humans and computers. Each one, extracts different information from your resume. Aim to <strong>maximize comprehension</strong> for both."},
             {"type" : "header2", "value" : "Humans"},
-            {"type" : "text", "value" : "To a recruiter, the content on your resume, is going to make or break their impression of you. If you take away one thing from this blog post.<strong> Communication skills are the most important skills in any professional position</strong>. I have one <strong>golden rule</strong> for every line on my resume."},
+            {"type" : "text", "value" : "To a recruiter, the content on your resume is going to make or break their impression of you. If you take away one thing from this blog post.<strong> Communication skills are the most important skills in any professional position</strong>. I have one <strong>golden rule</strong> for every line on my resume."},
             {"type" : "text", "value" : "<strong>If a recruiter only reads this one sentence on my resume:</strong>"},
             {"type" : "text-list", "value": [
                     "<strong>1. Will they understand it?</strong>",
